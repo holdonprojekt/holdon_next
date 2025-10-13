@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     type: "website",
   },
   icons: {
-    icon: "/legacy/assets/holdcikk-01.ico",
+    icon: "/assets/holdcikk-01.ico",
   },
   other: {
     "Cache-Control": "no-cache",

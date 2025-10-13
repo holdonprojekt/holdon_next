@@ -13,7 +13,7 @@ Use [pnpm](https://pnpm.io) for dependency and script management:
 ## Project Highlights
 
 - App Router structure with locale-aware routes (`/hu`, `/en`) and automatic redirect from `/`.
-- Tailwind CSS utility styling with a small layer of custom components to mirror the legacy layout.
+- Tailwind CSS utility styling with a small layer of custom components to mirror the original layout.
 - Server-rendered rich text sections fed by `src/locales/{lang}/common.json` while press content lives in `src/content/press.ts`.
 - Responsive navigation with an accessible mobile menu, localized hero scroll hint, and embed support for the Instagram hashtag feed.
 
@@ -26,4 +26,4 @@ Use [pnpm](https://pnpm.io) for dependency and script management:
 ## Deployment Notes
 
 - Ensure `NEXT_PUBLIC_SITE_URL` (if introduced later) points to the final domain for correct metadata URLs.
-- The app relies on public assets under `public/legacy/assets` and the EmbedSocial widget script loaded at runtime.
+- The app relies on public assets under `public/assets` and the EmbedSocial widget script loaded at runtime.

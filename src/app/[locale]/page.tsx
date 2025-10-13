@@ -105,7 +105,7 @@ export default async function HoldOnPage({ params }: PageProps) {
           </div>
           <div className="flex w-full items-center justify-center md:w-auto">
             <Image
-              src="/legacy/assets/tagok.webp"
+              src="/assets/tagok.webp"
               alt="A HoldOn projekt tagjai"
               width={480}
               height={640}

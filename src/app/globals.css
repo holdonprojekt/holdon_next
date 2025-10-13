@@ -1,10 +1,6 @@
 @import "tailwindcss";
 
 @layer base {
-	:root {
-		--color-gray-legacy: #888888;
-	}
-
 	*, ::before, ::after {
 		box-sizing: border-box;
 	}

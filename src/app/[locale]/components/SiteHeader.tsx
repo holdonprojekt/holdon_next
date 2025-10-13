@@ -75,7 +75,7 @@ export function SiteHeader({ menuItems, languageOptions, title }: SiteHeaderProp
         }`}
       >
         <Image
-          src="/legacy/assets/telihold2-01.webp"
+          src="/assets/telihold2-01.webp"
           alt="HoldOn logó"
           width={48}
           height={48}
@@ -101,7 +101,7 @@ export function SiteHeader({ menuItems, languageOptions, title }: SiteHeaderProp
             onClick={() => setIsOpen(false)}
           >
             <Image
-              src="/legacy/assets/telihold2-01.webp"
+              src="/assets/telihold2-01.webp"
               alt="HoldOn logó"
               width={64}
               height={64}

@@ -22,25 +22,25 @@ const socialLinks = [
     id: "mail",
     href: "mailto:holdon@holdonprojekt.hu",
     label: "holdon@holdonprojekt.hu",
-    icon: "/legacy/assets/mail.webp",
+  icon: "/assets/mail.webp",
   },
   {
     id: "insta",
     href: "https://www.instagram.com/holdon_projekt/",
     label: "holdon_projekt",
-    icon: "/legacy/assets/instagram.webp",
+  icon: "/assets/instagram.webp",
   },
   {
     id: "facebook",
     href: "https://www.facebook.com/HoldOn-projekt-102266192323581",
     label: "HoldOn projekt",
-    icon: "/legacy/assets/facebook.webp",
+  icon: "/assets/facebook.webp",
   },
   {
     id: "linkedin",
     href: "https://www.linkedin.com/company/holdon-projekt/",
     label: "HoldOn projekt",
-    icon: "/legacy/assets/linkedin.webp",
+  icon: "/assets/linkedin.webp",
   },
 ] as const;
 
