@@ -3,6 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
+import { cookie } from "../../fonts";
 
 export type MenuItem = {
   href: string;
@@ -18,158 +19,143 @@ export type LanguageOption = {
 type SiteHeaderProps = {
   menuItems: MenuItem[];
   languageOptions: LanguageOption[];
+  title: string;
 };
 
-export function SiteHeader({ menuItems, languageOptions }: SiteHeaderProps) {
+export function SiteHeader({ menuItems, languageOptions, title }: SiteHeaderProps) {
   const [isOpen, setIsOpen] = useState(false);
-  const containerRef = useRef<HTMLDivElement>(null);
+  const panelRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
+    if (!isOpen) {
+      return;
+    }
+
     const handleClickOutside = (event: Event) => {
       if (
-        isOpen &&
-        containerRef.current &&
-        !containerRef.current.contains(event.target as Node)
+        panelRef.current &&
+        !panelRef.current.contains(event.target as Node)
       ) {
-        setIsOpen(false);
-      }
-    };
-
-    const handleEscape = (event: KeyboardEvent) => {
-      if (event.key === "Escape") {
         setIsOpen(false);
       }
     };
 
     document.addEventListener("mousedown", handleClickOutside);
     document.addEventListener("touchstart", handleClickOutside);
-    document.addEventListener("keydown", handleEscape);
 
     return () => {
       document.removeEventListener("mousedown", handleClickOutside);
       document.removeEventListener("touchstart", handleClickOutside);
-      document.removeEventListener("keydown", handleEscape);
     };
   }, [isOpen]);
 
   useEffect(() => {
-    if (isOpen) {
-      document.body.style.overflow = "hidden";
-      return () => {
-        document.body.style.overflow = "";
-      };
-    }
-    return undefined;
-  }, [isOpen]);
+    const handleEscape = (event: KeyboardEvent) => {
+      if (event.key === "Escape") {
+        setIsOpen(false);
+      }
+    };
+
+    document.addEventListener("keydown", handleEscape);
+
+    return () => {
+      document.removeEventListener("keydown", handleEscape);
+    };
+  }, []);
 
   return (
-    <header className="fixed inset-x-0 top-0 z-50 bg-white/95 shadow-header backdrop-blur">
-      <div
-        ref={containerRef}
-        className="mx-auto flex w-full max-w-6xl items-center justify-between px-4 py-3 md:px-8"
+    <>
+      <button
+        type="button"
+        aria-expanded={isOpen}
+        aria-label="Open navigation"
+        onClick={() => setIsOpen(true)}
+        className={`fixed right-4 top-6 z-40 flex items-center gap-3 rounded-full bg-white/90 px-5 py-3 shadow-header backdrop-blur transition-all duration-200 hover:bg-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-shakespeare md:right-12 ${
+          isOpen ? "pointer-events-none -translate-y-2 opacity-0" : "pointer-events-auto"
+        }`}
       >
-        <a href="#hero" className="flex items-center gap-3">
-          <Image
-            src="/legacy/assets/telihold2-01.webp"
-            alt="HoldOn logó"
-            width={64}
-            height={64}
-            priority
-            className="h-12 w-12 md:h-16 md:w-16"
-          />
-          <span className="hidden text-2xl font-accent text-shakespeare drop-shadow-sm md:inline-block">
-            HoldOn
-          </span>
-        </a>
-        <nav className="hidden items-center gap-6 md:flex">
-          {menuItems.map((item) => (
-            <a
-              key={item.href}
-              href={item.href}
-              className="text-lg font-serif tracking-wide text-gray-700 transition hover:text-black"
-            >
-              {item.label}
-            </a>
-          ))}
-          <div className="flex items-center gap-2 text-sm uppercase">
-            {languageOptions.map((option) => (
-              <Link
-                key={option.label}
-                href={option.href}
-                className={
-                  option.isActive
-                    ? "rounded-full border border-shakespeare px-3 py-1 font-semibold text-shakespeare"
-                    : "rounded-full border border-transparent px-3 py-1 text-gray-600 transition hover:border-shakespeare hover:text-shakespeare"
-                }
-                scroll={false}
-              >
-                {option.label}
-              </Link>
-            ))}
-          </div>
-        </nav>
-        <button
-          type="button"
-          aria-label="Toggle menu"
-          className="flex h-11 w-11 items-center justify-center rounded-full border border-black/10 md:hidden"
-          onClick={() => setIsOpen((open) => !open)}
-        >
-          <span className="relative block h-5 w-6">
-            <span
-              className={`absolute inset-x-0 top-0 h-0.5 rounded bg-black transition ${
-                isOpen ? "translate-y-2 rotate-45" : ""
-              }`}
-            />
-            <span
-              className={`absolute left-0 right-0 top-1/2 h-0.5 -translate-y-1/2 rounded bg-black transition ${
-                isOpen ? "opacity-0" : ""
-              }`}
-            />
-            <span
-              className={`absolute inset-x-0 bottom-0 h-0.5 rounded bg-black transition ${
-                isOpen ? "-translate-y-2 -rotate-45" : ""
-              }`}
-            />
-          </span>
-        </button>
-      </div>
+        <Image
+          src="/legacy/assets/telihold2-01.webp"
+          alt="HoldOn logó"
+          width={48}
+          height={48}
+          priority
+          className="h-10 w-10 drop-shadow-sm"
+        />
+        <span className={`${cookie.className} text-2xl text-shakespeare drop-shadow-sm md:text-3xl`}>
+          {title}
+        </span>
+      </button>
       <div
-        className={`md:hidden ${
-          isOpen ? "pointer-events-auto opacity-100" : "pointer-events-none opacity-0"
-        } transition`}
+        ref={panelRef}
+        className={`fixed left-1/2 top-4 z-40 w-[calc(100%-1.5rem)] max-w-6xl -translate-x-1/2 overflow-hidden rounded-4xl bg-white/95 shadow-2xl backdrop-blur transition-all duration-300 md:top-10 md:w-[calc(100%-5rem)] ${
+          isOpen
+            ? "pointer-events-auto translate-y-0 opacity-100"
+            : "pointer-events-none -translate-y-[130%] opacity-0"
+        }`}
       >
-        <div className="bg-white/95 px-6 pb-8 pt-2 shadow-lg backdrop-blur">
-          <nav className="flex flex-col gap-4 text-lg">
+        <div className="grid gap-8 px-8 py-10 md:grid-cols-[auto_1fr_auto] md:items-center md:gap-12 md:px-16 md:py-12">
+          <a
+            href="#hero"
+            className="flex items-center gap-4 text-shakespeare transition-colors hover:text-copperrose"
+            onClick={() => setIsOpen(false)}
+          >
+            <Image
+              src="/legacy/assets/telihold2-01.webp"
+              alt="HoldOn logó"
+              width={64}
+              height={64}
+              priority
+              className="h-12 w-12 drop-shadow-md md:h-16 md:w-16"
+            />
+            <span className={`${cookie.className} text-4xl md:text-5xl`}>
+              {title}
+            </span>
+          </a>
+          <nav className="flex flex-col gap-5 text-xl font-serif font-light text-gray-700 md:flex-row md:items-center md:justify-center md:gap-12">
             {menuItems.map((item) => (
               <a
                 key={item.href}
                 href={item.href}
-                className="font-serif text-gray-700"
                 onClick={() => setIsOpen(false)}
+                className="transition-colors hover:text-black/60"
               >
                 {item.label}
               </a>
             ))}
           </nav>
-          <div className="mt-4 flex gap-2 text-sm uppercase">
-            {languageOptions.map((option) => (
-              <Link
-                key={option.label}
-                href={option.href}
-                scroll={false}
-                className={
-                  option.isActive
-                    ? "rounded-full border border-shakespeare px-3 py-1 font-semibold text-shakespeare"
-                    : "rounded-full border border-transparent px-3 py-1 text-gray-600"
-                }
-                onClick={() => setIsOpen(false)}
-              >
-                {option.label}
-              </Link>
-            ))}
+          <div className="flex flex-col items-end gap-6 md:flex-col-reverse md:items-end">
+            <button
+              type="button"
+              aria-label="Close navigation"
+              className="relative ml-auto flex h-12 w-12 items-center justify-center rounded-full border border-black/10 bg-white text-black transition hover:border-black/20 hover:bg-white/90 hover:text-black md:ml-0"
+              onClick={() => setIsOpen(false)}
+            >
+              <span className="absolute block h-6 w-6 rotate-45">
+                <span className="absolute inset-x-0 top-1/2 h-0.5 -translate-y-1/2 rounded bg-current" />
+                <span className="absolute left-1/2 top-0 h-full w-0.5 -translate-x-1/2 rounded bg-current" />
+              </span>
+            </button>
+            <div className="flex flex-wrap justify-end gap-4 text-sm uppercase tracking-wide">
+              {languageOptions.map((option) => (
+                <Link
+                  key={option.label}
+                  href={option.href}
+                  scroll={false}
+                  onClick={() => setIsOpen(false)}
+                  className={
+                    option.isActive
+                      ? "rounded-full border border-shakespeare px-4 py-1 font-medium text-shakespeare transition-all duration-200"
+                      : "rounded-full border border-gray-300 px-4 py-1 text-gray-600 font-light transition-all duration-200 hover:border-black/30 hover:text-black"
+                  }
+                >
+                  {option.label}
+                </Link>
+              ))}
+            </div>
           </div>
         </div>
       </div>
-    </header>
+    </>
   );
 }

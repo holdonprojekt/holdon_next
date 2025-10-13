@@ -3,17 +3,17 @@
     "page-title": "HoldOn"
   },
   "navigation": {
-    "nav-link-project": "The project",
-    "nav-link-about": "About us",
+    "nav-link-project": "Project",
+    "nav-link-about": "About",
     "nav-link-donate": "Donate",
-    "nav-link-insta": "Educational content",
+    "nav-link-insta": "Education",
     "nav-link-press": "Press"
   },
   "footer": {
-    "footer-link-project": "The project",
-    "footer-link-about": "About us",
+    "footer-link-project": "Project",
+    "footer-link-about": "About",
     "footer-link-donate": "Donate",
-    "footer-link-insta": "Educational content",
+    "footer-link-insta": "Education",
     "footer-link-press": "Press",
     "footer-info": "Holdon Egyesület, RegN.: 01-02-0018388, Tax number: 19401021-1-43, Address: Villányi út 72. I/1., Budapest 1113, Hungary",
     "credits": "Icons by Freepik & Google.",

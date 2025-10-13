@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { ContextMenuBlocker } from "./components/ContextMenuBlocker";
-import { Arbutus_Slab, Cookie, Source_Sans_3 } from "next/font/google";
+import { arbutus, cookie, sourceSans } from "./fonts";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://holdonprojekt.hu"),
@@ -31,10 +31,6 @@ export const metadata: Metadata = {
     "author": "Tamas Csertan",
   },
 };
-
-const arbutus = Arbutus_Slab({ subsets: ["latin"], weight: "400", variable: "--font-serif" });
-const sourceSans = Source_Sans_3({ subsets: ["latin"], weight: ["300", "400", "600"], variable: "--font-sans" });
-const cookie = Cookie({ subsets: ["latin"], weight: "400", variable: "--font-cookie" });
 
 export default function RootLayout({
   children,

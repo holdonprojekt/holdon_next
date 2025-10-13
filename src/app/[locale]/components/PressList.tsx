@@ -10,14 +10,23 @@ export function PressList() {
           className="rounded-3xl bg-white/85 p-8 shadow-lg shadow-black/5 backdrop-blur"
         >
           <div className="flex flex-col gap-2 md:flex-row md:items-baseline md:justify-between">
-            <h3 className="text-2xl font-serif text-black">{item.title}</h3>
-            <time className="text-sm font-sans uppercase tracking-wide text-gray-600">
+            <h3 className="text-2xl font-serif text-black">
+              <span className="font-light">{item.title}</span>
+            </h3>
+            <time className="text-sm font-sans uppercase tracking-wide text-gray-600 font-light">
               {item.date}
             </time>
           </div>
-          <p className="mt-4 text-base leading-relaxed text-black/80">{item.excerpt}</p>
+          <p className="mt-4 text-base leading-relaxed text-black/80 font-light">
+            {item.excerpt}
+          </p>
           <p className="mt-4 text-sm font-sans uppercase tracking-wide text-shakespeare">
-            <Link href={item.href} target="_blank" rel="noreferrer">
+            <Link
+              href={item.href}
+              target="_blank"
+              rel="noreferrer"
+              className="transition-colors hover:text-copperrose"
+            >
               {item.sourceLabel}
             </Link>
           </p>

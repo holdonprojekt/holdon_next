@@ -22,13 +22,12 @@ module.exports = {
       },
       keyframes: {
         scrollBounce: {
-          "0%, 100%": { opacity: "0", transform: "translateY(0)" },
-          "40%": { opacity: "1" },
-          "80%": { opacity: "0", transform: "translateY(20px)" },
+          "0%, 100%": { top: "0.5rem" },
+          "50%": { top: "calc(100% - 1.25rem)" },
         },
       },
       animation: {
-        scrollBounce: "scrollBounce 2s infinite",
+        scrollBounce: "scrollBounce 1.9s ease-in-out infinite",
       },
     },
   },

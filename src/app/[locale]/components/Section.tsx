@@ -15,7 +15,9 @@ export function Section({ id, title, backgroundColor, children }: SectionProps) 
       style={{ backgroundColor }}
     >
       <div className="w-full max-w-xs text-center md:max-w-sm md:text-left">
-        <h2 className="text-3xl font-serif text-black md:text-4xl">{title}</h2>
+        <h2 className="text-3xl font-serif text-black md:text-4xl md:leading-tight">
+          <span className="font-light">{title}</span>
+        </h2>
       </div>
       <div className="flex w-full max-w-5xl flex-1 flex-col gap-8 text-lg leading-relaxed text-black md:flex-row md:items-start md:gap-12">
         {children}

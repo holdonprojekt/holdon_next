@@ -3,17 +3,17 @@
     "page-title": "HoldOn"
   },
   "navigation": {
-    "nav-link-project": "A projekt",
-    "nav-link-about": "Kik vagyunk mi?",
+    "nav-link-project": "Projekt",
+    "nav-link-about": "Rólunk",
     "nav-link-donate": "Támogatás",
-    "nav-link-insta": "Edukációs anyagok",
+    "nav-link-insta": "Edukáció",
     "nav-link-press": "Sajtó"
   },
   "footer": {
-    "footer-link-project": "A projekt",
-    "footer-link-about": "Kik vagyunk mi?",
+    "footer-link-project": "Projekt",
+    "footer-link-about": "Rólunk",
     "footer-link-donate": "Támogatás",
-    "footer-link-insta": "Edukációs anyagok",
+    "footer-link-insta": "Edukáció",
     "footer-link-press": "Sajtó",
     "footer-info": "Holdon Egyesület, Nytsz.: 01-02-0018388, Adószám: 19401021-1-43, Székhely: 1113 Budapest, Villányi út 72. I/1.",
     "credits": "Ikonok: a Freepiktől és a Google-től.",

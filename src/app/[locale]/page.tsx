@@ -10,28 +10,32 @@ import { getDictionary, locales, type Locale } from "@/lib/i18n";
 import { PressList } from "./components/PressList";
 import { LangSetter } from "./components/LangSetter";
 
-const projectBackground = "#e9e3bcb7";
-const aboutBackground = "#e9e3bc85";
-const donateBackground = "#e9e3bc39";
-const instaBackground = "#e9e3bc17";
-const pressBackground = "#e9e3bc17";
+const projectBackground = "rgba(228, 218, 175, 0.95)";
+const aboutBackground = "rgba(233, 227, 188, 0.95)";
+const donateBackground = "rgba(241, 236, 207, 0.9)";
+const instaBackground = "rgba(247, 244, 224, 0.88)";
+const pressBackground = "rgba(251, 249, 237, 0.95)";
 
 export async function generateStaticParams() {
   return locales.map((locale) => ({ locale }));
 }
 
+type PageParams = {
+  locale: string;
+};
+
 type PageProps = {
-  params: {
-    locale: string;
-  };
+  params: Promise<PageParams>;
 };
 
 export default async function HoldOnPage({ params }: PageProps) {
-  const locale = params.locale as Locale;
+  const { locale: localeParam } = await params;
 
-  if (!locales.includes(locale)) {
+  if (!locales.includes(localeParam as Locale)) {
     notFound();
   }
+
+  const locale = localeParam as Locale;
 
   const dictionary = await getDictionary(locale);
   const navigation = dictionary.navigation;
@@ -40,14 +44,14 @@ export default async function HoldOnPage({ params }: PageProps) {
   const currentYear = new Date().getFullYear();
   const scrollLabel =
     locale === "hu"
-      ? "Görgés a projektszakaszhoz"
-      : "Scroll to the project section";
+      ? "Görgetés lefelé"
+      : "Scroll down";
 
   const menuItems = [
     { href: "#project", label: navigation["nav-link-project"] },
     { href: "#about", label: navigation["nav-link-about"] },
-  { href: "#donate", label: navigation["nav-link-donate"] },
-  { href: "#insta-content", label: navigation["nav-link-insta"] },
+    { href: "#donate", label: navigation["nav-link-donate"] },
+    { href: "#insta-content", label: navigation["nav-link-insta"] },
     { href: "#press", label: navigation["nav-link-press"] },
   ];
 
@@ -60,16 +64,20 @@ export default async function HoldOnPage({ params }: PageProps) {
   const footerMenuItems = [
     { href: "#project", label: footer["footer-link-project"] },
     { href: "#about", label: footer["footer-link-about"] },
-  { href: "#donate", label: footer["footer-link-donate"] },
-  { href: "#insta-content", label: footer["footer-link-insta"] },
+    { href: "#donate", label: footer["footer-link-donate"] },
+    { href: "#insta-content", label: footer["footer-link-insta"] },
     { href: "#press", label: footer["footer-link-press"] },
   ];
 
   return (
     <>
       <LangSetter locale={locale} />
-      <SiteHeader menuItems={menuItems} languageOptions={languageOptions} />
-      <main className="relative flex flex-col gap-0 overflow-hidden pt-24">
+      <SiteHeader
+        menuItems={menuItems}
+        languageOptions={languageOptions}
+        title={dictionary.head["page-title"]}
+      />
+      <main className="relative flex flex-col gap-0 overflow-hidden">
         <Hero
           title={dictionary.head["page-title"]}
           scrollTarget="#project"
@@ -81,9 +89,9 @@ export default async function HoldOnPage({ params }: PageProps) {
           backgroundColor={projectBackground}
         >
           <div className="flex w-full max-w-3xl flex-col gap-6">
-            <RichText html={content.project["project-p1"]} className="text-lg leading-relaxed" />
-            <RichText html={content.project["project-p2"]} className="text-lg leading-relaxed" />
-            <RichText html={content.project["project-p3"]} className="text-lg leading-relaxed" />
+            <RichText html={content.project["project-p1"]} className="text-lg font-light leading-relaxed" />
+            <RichText html={content.project["project-p2"]} className="text-lg font-light leading-relaxed" />
+            <RichText html={content.project["project-p3"]} className="text-lg font-light leading-relaxed" />
           </div>
         </Section>
         <Section
@@ -92,8 +100,8 @@ export default async function HoldOnPage({ params }: PageProps) {
           backgroundColor={aboutBackground}
         >
           <div className="flex w-full max-w-3xl flex-col gap-6">
-            <RichText html={content.about["about-p1"]} className="text-lg leading-relaxed" />
-            <RichText html={content.about["about-p2"]} className="text-lg leading-relaxed" />
+            <RichText html={content.about["about-p1"]} className="text-lg font-light leading-relaxed" />
+            <RichText html={content.about["about-p2"]} className="text-lg font-light leading-relaxed" />
           </div>
           <div className="flex w-full items-center justify-center md:w-auto">
             <Image
@@ -111,15 +119,15 @@ export default async function HoldOnPage({ params }: PageProps) {
           backgroundColor={donateBackground}
         >
           <div className="flex w-full max-w-3xl flex-col gap-6">
-            <RichText html={content.donate["donate-p1"]} className="text-lg leading-relaxed" />
-            <RichText html={content.donate["donate-p2"]} className="text-lg leading-relaxed" />
-            <RichText html={content.donate["donate-p3"]} className="text-lg leading-relaxed" />
+            <RichText html={content.donate["donate-p1"]} className="text-lg font-light leading-relaxed" />
+            <RichText html={content.donate["donate-p2"]} className="text-lg font-light leading-relaxed" />
+            <RichText html={content.donate["donate-p3"]} className="text-lg font-light leading-relaxed" />
           </div>
           <div className="flex w-full max-w-sm flex-col gap-3 rounded-3xl bg-white/80 p-6 text-base shadow-lg shadow-black/5">
-            <RichText html={content.donate["donate-li1"]} />
-            <RichText html={content.donate["donate-li2"]} />
-            <RichText html={content.donate["donate-li3"]} />
-            <RichText html={content.donate["donate-li4"]} />
+            <RichText html={content.donate["donate-li1"]} className="font-light" />
+            <RichText html={content.donate["donate-li2"]} className="font-light" />
+            <RichText html={content.donate["donate-li3"]} className="font-light" />
+            <RichText html={content.donate["donate-li4"]} className="font-light" />
           </div>
         </Section>
         <section
@@ -151,18 +159,7 @@ export default async function HoldOnPage({ params }: PageProps) {
         languageOptions={languageOptions}
         currentYear={currentYear}
       />
-      <Script id="embedsocial-hashtag" strategy="afterInteractive">
-        {`(function(d, s, id){
-  var js;
-  if (d.getElementById(id)) {
-    return;
-  }
-  js = d.createElement(s);
-  js.id = id;
-  js.src = "https://embedsocial.com/cdn/ht.js";
-  d.getElementsByTagName("head")[0].appendChild(js);
-})(document, "script", "EmbedSocialHashtagScript");`}
-      </Script>
+      <Script src="https://embedsocial.com/cdn/ht.js" strategy="afterInteractive" />
     </>
   );
 }

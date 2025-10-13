@@ -51,15 +51,15 @@ export function SiteFooter({
   currentYear,
 }: SiteFooterProps) {
   return (
-    <footer className="bg-white/90 px-6 py-12 text-black backdrop-blur">
+  <footer className="bg-white px-6 py-12 text-black backdrop-blur">
       <div className="mx-auto flex w-full max-w-6xl flex-col gap-10 md:flex-row md:items-end md:justify-between">
         <div className="flex flex-col gap-8 md:w-2/3">
-          <nav className="flex flex-wrap gap-4 text-lg font-serif">
+          <nav className="flex flex-wrap gap-4 text-lg font-serif font-light">
             {menuItems.map((item) => (
               <a
                 key={item.href}
                 href={item.href}
-                className="transition hover:text-shakespeare"
+                className="transition-all duration-200 hover:text-shakespeare hover:underline hover:underline-offset-4"
               >
                 {item.label}
               </a>
@@ -82,7 +82,7 @@ export function SiteFooter({
                     href={link.href}
                     target={isExternal ? "_blank" : undefined}
                     rel={isExternal ? "noreferrer" : undefined}
-                    className="font-sans text-sm uppercase tracking-wide text-shakespeare"
+                    className="font-sans text-sm uppercase tracking-wide text-shakespeare font-light transition-all duration-200 hover:text-tussock hover:underline hover:underline-offset-2"
                   >
                     {link.label}
                   </a>
@@ -98,8 +98,8 @@ export function SiteFooter({
                 scroll={false}
                 className={
                   option.isActive
-                    ? "rounded-full border border-shakespeare px-3 py-1 font-semibold text-shakespeare"
-                    : "rounded-full border border-transparent px-3 py-1 text-gray-600"
+                    ? "rounded-full border border-shakespeare px-3 py-1 font-medium text-shakespeare transition-all duration-200"
+                    : "rounded-full border border-gray-300 px-3 py-1 text-gray-600 font-light transition-all duration-200 hover:border-black/30 hover:text-black"
                 }
               >
                 {option.label}
@@ -108,15 +108,15 @@ export function SiteFooter({
           </div>
           <RichText
             html={footerLabels.info}
-            className="max-w-2xl text-sm font-sans leading-relaxed text-gray-600"
+            className="max-w-2xl text-sm font-sans font-light leading-relaxed text-gray-600"
           />
         </div>
         <div className="flex w-full max-w-sm flex-col items-center gap-4 text-center font-sans text-sm text-gray-600 md:items-end md:text-right">
-          <RichText html={footerLabels.credits} />
-          <RichText html={footerLabels.webDesign} />
-          <div className="flex flex-wrap items-center justify-center gap-1 md:justify-end">
+          <RichText html={footerLabels.credits} className="font-light transition-colors hover:text-gray-700" />
+          <RichText html={footerLabels.webDesign} className="font-light transition-colors hover:text-gray-700" />
+          <div className="flex flex-wrap items-center justify-center gap-1 transition-colors hover:text-gray-700 md:justify-end">
             <span>©2021-{currentYear}</span>
-            <RichText html={footerLabels.legal} className="inline" as="span" />
+            <RichText html={footerLabels.legal} className="inline font-light" as="span" />
           </div>
         </div>
       </div>
