@@ -1,28 +1,51 @@
 @import "tailwindcss";
 
 @layer base {
+	:root {
+		--color-gray-legacy: #888888;
+	}
+
 	*, ::before, ::after {
-		box-sizing: content-box;
-		border-width: initial;
-		border-style: none;
-		border-color: initial;
+		box-sizing: border-box;
 	}
 
 	html {
-		line-height: normal;
+		scroll-behavior: smooth;
 	}
 
-	body, h1, h2, h3, h4, h5, h6, p, figure {
-		margin: initial;
+	body {
+		margin: 0;
+		background-color: #e9e3bc;
+		color: #202020;
+		font-family: var(--font-serif), serif;
 	}
 
-	ul, ol {
-		margin: initial;
-		padding: initial;
+	h1, h2, h3, h4, h5, h6 {
+		margin: 0;
+		font-weight: 400;
 	}
 
-	table {
-		border-collapse: separate;
-		text-indent: initial;
+	p {
+		margin: 0;
+	}
+
+	a {
+		color: inherit;
+		text-decoration: none;
+	}
+
+	ul {
+		margin: 0;
+		padding: 0;
+	}
+
+	li {
+		list-style: none;
+	}
+}
+
+@layer utilities {
+	.text-shadow {
+		text-shadow: 0 10px 30px rgba(0, 0, 0, 0.18);
 	}
 }

@@ -1,36 +1,29 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+## Overview
 
-## Getting Started
+Modern refactor of the HoldOn project website using the Next.js App Router and Tailwind CSS while keeping the original visual language. Content is served in Hungarian and English from JSON dictionaries and rendered on the server for fast loads.
 
-First, run the development server:
+## Available Scripts
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Use [pnpm](https://pnpm.io) for dependency and script management:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- `pnpm dev` – start the development server at [http://localhost:3000](http://localhost:3000).
+- `pnpm lint` – run ESLint with the project configuration.
+- `pnpm build` – create an optimized production build (includes type checking).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Project Highlights
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- App Router structure with locale-aware routes (`/hu`, `/en`) and automatic redirect from `/`.
+- Tailwind CSS utility styling with a small layer of custom components to mirror the legacy layout.
+- Server-rendered rich text sections fed by `src/locales/{lang}/common.json` while press content lives in `src/content/press.ts`.
+- Responsive navigation with an accessible mobile menu, localized hero scroll hint, and embed support for the Instagram hashtag feed.
 
-## Learn More
+## Localization
 
-To learn more about Next.js, take a look at the following resources:
+- Default locale: `hu`.
+- Translation dictionaries: `src/locales/hu/common.json`, `src/locales/en/common.json`.
+- Shared helpers in `src/lib/i18n.ts` expose utilities for loading dictionaries and iterating supported locales.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Deployment Notes
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Ensure `NEXT_PUBLIC_SITE_URL` (if introduced later) points to the final domain for correct metadata URLs.
+- The app relies on public assets under `public/legacy/assets` and the EmbedSocial widget script loaded at runtime.

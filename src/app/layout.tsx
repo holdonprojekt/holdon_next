@@ -1,10 +1,7 @@
-/* eslint-disable @next/next/no-css-tags */
-/* eslint-disable @next/next/google-font-display */
-/* eslint-disable @next/next/no-page-custom-font */
 import type { Metadata } from "next";
-import Script from "next/script";
 import "./globals.css";
 import { ContextMenuBlocker } from "./components/ContextMenuBlocker";
+import { Arbutus_Slab, Cookie, Source_Sans_3 } from "next/font/google";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://holdonprojekt.hu"),
@@ -35,47 +32,19 @@ export const metadata: Metadata = {
   },
 };
 
+const arbutus = Arbutus_Slab({ subsets: ["latin"], weight: "400", variable: "--font-serif" });
+const sourceSans = Source_Sans_3({ subsets: ["latin"], weight: ["300", "400", "600"], variable: "--font-sans" });
+const cookie = Cookie({ subsets: ["latin"], weight: "400", variable: "--font-cookie" });
+
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="hu">
-      <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link rel="stylesheet" href="https://unpkg.com/sanitize.css" />
-        <link rel="stylesheet" href="https://unpkg.com/sanitize.css/typography.css" />
-        <link
-          rel="stylesheet"
-          href="https://fonts.googleapis.com/css2?family=Arbutus+Slab&family=Source+Sans+Pro:wght@300;400&family=Cookie&display=swap"
-        />
-        <link
-          rel="stylesheet"
-          href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,300,0,0"
-        />
-        <link rel="stylesheet" href="/legacy/style/main.css" />
-      </head>
-      <body suppressHydrationWarning>
+    <html lang="hu" suppressHydrationWarning>
+      <body className={`${arbutus.variable} ${sourceSans.variable} ${cookie.variable} antialiased`}>
         <ContextMenuBlocker>{children}</ContextMenuBlocker>
-        <Script
-          src="https://unpkg.com/i18next/i18next.js"
-          strategy="beforeInteractive"
-        />
-        <Script
-          src="https://unpkg.com/i18next-xhr-backend/i18nextXHRBackend.js"
-          strategy="beforeInteractive"
-        />
-        <Script
-          src="https://unpkg.com/i18next-browser-languagedetector/i18nextBrowserLanguageDetector.js"
-          strategy="beforeInteractive"
-        />
-        <Script
-          src="/legacy/scripts/i18_intern.js"
-          strategy="afterInteractive"
-        />
-        <Script src="/legacy/scripts/main.js" strategy="afterInteractive" />
       </body>
     </html>
   );
