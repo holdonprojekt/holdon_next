@@ -15,10 +15,12 @@
     "footer-link-donate": "Spenden",
     "footer-link-insta": "Bildung",
     "footer-link-press": "Presse",
+    "footer-link-terms": "Allgemeine Gesch\u00e4ftsbedingungen",
+    "footer-link-privacy": "Datenschutzerkl\u00e4rung",
     "footer-info": "Holdon Egyes\u00fclet, RegNr.: 01-02-0018388, Steuernummer: 19401021-1-43, Adresse: Vill\u00e1nyi \u00fat 72. I/1., Budapest 1113, Ungarn",
     "credits": "Icons von Freepik & Google.",
     "web-design": "<a href='https://csertant.hu'>Mit &#10084; gestaltet von csertant</a>.",
-    "legal": "&nbsp;HoldOn-Projekt. Alle Rechte vorbehalten."
+    "legal": "&nbsp;Holdon Egyes\u00fclet. Alle Rechte vorbehalten."
   },
   "content": {
     "project": {
@@ -30,7 +32,7 @@
     "about": {
       "about-title": "\u00dcber uns",
       "about-p1": "F\u00fcr uns ist HoldOn kein Strohfeuerprojekt, das aus einem pl\u00f6tzlichen jugendlichen Enthusiasmus entstanden ist, sondern ruht auf soliden Grundlagen, die durch intensive Gespr\u00e4che sowie den Austausch von Ideen und Erfahrungen geschaffen wurden. Bei der Ausarbeitung des Projekts wandten wir uns an Fachleute aus dem Bereich und erhielten die positive Best\u00e4tigung, dass unsere Idee tats\u00e4chlich eine wichtige L\u00fccke schlie\u00dft. Unser Ziel ist es, die langfristige, sichere Finanzierung des Projekts zu gew\u00e4hrleisten. Die Wirkung von Projekten im Bereich gesellschaftlicher Verantwortung zu messen, ist \u00e4u\u00dferst schwierig, und wir wissen, dass das, was wir tun, nur ein Tropfen auf den hei\u00dfen Stein und keine systemische L\u00f6sung ist. Uns ist bewusst, dass der Erfolg hier m\u00f6glicherweise nicht sofort sichtbar wird, doch es zeigt sich klar, dass die Nachfrage nach diesen Produkten weiterhin hoch ist \u2013 ebenso wie unsere Begeisterung und Ausdauer f\u00fcr die Sache. Wir wollen auf diesen Bedarf sensibel und effektiv reagieren.",
-      "about-p2": "Gegenw\u00e4rtig tr\u00e4gt die ehrenamtliche Arbeit eines Dutzends Studierender das Projekt. Einige Mitglieder besch\u00e4ftigen sich mit F\u00f6rderantr\u00e4gen und der Finanzierung, andere konzentrieren sich auf die technischen und mechanischen Aspekte des Automaten, wieder andere sind f\u00fcr Marketing, Erscheinungsbild und soziale Medien verantwortlich, und ein weiterer Teil widmet sich der Strategie, dem Kontakt zu Fachleuten und der Gewinnung von Unterst\u00fctzerinnen und Unterst\u00fctzern. Derzeit findet viel Hintergrundarbeit statt, die das R\u00fcckgrat des Projekts bildet. K\u00fcnftig m\u00f6chten wir auch Menschen vor Ort einbeziehen oder mit anderen Studierenden zusammenarbeiten, um die finanzielle Stabilit\u00e4t des Projekts sicherzustellen, zum Beispiel durch F\u00f6rdermittel und Fundraising-Initiativen."
+    "about-p2": "Gegenw\u00e4rtig tr\u00e4gt die ehrenamtliche Arbeit eines Dutzends Studierender das Projekt. Einige Mitglieder besch\u00e4ftigen sich mit F\u00f6rderantr\u00e4gen und der Finanzierung, andere konzentrieren sich auf die technischen und mechanischen Aspekte des Automaten, wieder andere sind f\u00fcr Marketing, Erscheinungsbild und soziale Medien verantwortlich, und ein weiterer Teil widmet sich der Strategie, dem Kontakt zu Fachleuten und der Gewinnung von Unterst\u00fctzerinnen und Unterst\u00fctzern. Derzeit findet viel Hintergrundarbeit statt, die das R\u00fcckgrat des Projekts bildet. K\u00fcnftig m\u00f6chten wir auch Menschen vor Ort einbeziehen oder mit anderen Studierenden zusammenarbeiten, um die finanzielle Stabilit\u00e4t des Projekts sicherzustellen, zum Beispiel durch F\u00f6rdermittel und Fundraising-Initiativen."
     },
     "donate": {
       "donate-title": "Wie kannst du helfen?",
@@ -60,6 +62,11 @@
     },
     "press": {
       "press-title": "Presse"
+    },
+    "legal": {
+      "intro": "Offizielle Richtlinien des HoldOn Projekts.",
+      "terms-title": "Allgemeine Geschäftsbedingungen",
+      "privacy-title": "Datenschutzerklärung"
     }
   }
 }

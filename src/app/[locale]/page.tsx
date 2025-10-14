@@ -75,6 +75,10 @@ export default async function HoldOnPage({ params }: PageProps) {
     { href: "#insta-content", label: footer["footer-link-insta"] },
     { href: "#press", label: footer["footer-link-press"] },
   ];
+  const legalMenuItems = [
+    { href: `/${locale}/legal/terms`, label: footer["footer-link-terms"] },
+    { href: `/${locale}/legal/privacy`, label: footer["footer-link-privacy"] },
+  ];
 
   return (
     <>
@@ -164,6 +168,7 @@ export default async function HoldOnPage({ params }: PageProps) {
       </main>
       <SiteFooter
         menuItems={footerMenuItems}
+        legalMenuItems={legalMenuItems}
         footerLabels={{
           info: footer["footer-info"],
           credits: footer.credits,

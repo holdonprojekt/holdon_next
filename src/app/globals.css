@@ -96,4 +96,73 @@
 	.scroll-indicator-dot {
 		animation: hero-scroll-bounce 1.5s ease-in-out infinite;
 	}
+
+	.legal-content {
+		display: flex;
+		flex-direction: column;
+		gap: 1.5rem;
+		font-family: var(--font-sans), sans-serif;
+		color: #202020;
+	}
+
+	.legal-content h1,
+	.legal-content h2,
+	.legal-content h3,
+	.legal-content h4 {
+		font-family: var(--font-serif), serif;
+		font-weight: 300;
+		color: #141414;
+	}
+
+	.legal-content h1 {
+		font-size: clamp(2.5rem, 5vw, 3.5rem);
+		line-height: 1.1;
+	}
+
+	.legal-content h2 {
+		font-size: clamp(1.5rem, 3vw, 2.125rem);
+		margin-top: 1rem;
+	}
+
+	.legal-content p,
+	.legal-content li {
+		font-size: 1rem;
+		line-height: 1.75;
+	}
+
+	.legal-content ul,
+	.legal-content ol {
+		display: flex;
+		flex-direction: column;
+		gap: 0.75rem;
+		padding-left: 1.5rem;
+	}
+
+	.legal-content ul {
+		list-style-type: disc;
+	}
+
+	.legal-content ol {
+		list-style-type: decimal;
+	}
+
+	.legal-content li {
+		list-style-position: outside;
+	}
+
+	.legal-content a {
+		color: var(--color-shakespeare);
+		text-decoration: underline;
+		text-decoration-thickness: 1px;
+		text-underline-offset: 4px;
+		transition: color 150ms ease-in-out;
+	}
+
+	.legal-content a:hover {
+		color: #000;
+	}
+
+	.legal-content em {
+		font-style: italic;
+	}
 }

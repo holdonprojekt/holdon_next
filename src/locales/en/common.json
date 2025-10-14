@@ -15,10 +15,12 @@
     "footer-link-donate": "Donate",
     "footer-link-insta": "Education",
     "footer-link-press": "Press",
+    "footer-link-terms": "Terms & Conditions",
+    "footer-link-privacy": "Privacy Policy",
     "footer-info": "Holdon Egyesület, RegN.: 01-02-0018388, Tax number: 19401021-1-43, Address: Villányi út 72. I/1., Budapest 1113, Hungary",
     "credits": "Icons by Freepik & Google.",
-  "web-design": "<a href='https://csertant.hu'>Made with &#10084; by csertant</a>.",
-    "legal": "&nbsp;HoldOn project. All rights reserved."
+    "web-design": "<a href='https://csertant.hu'>Made with &#10084; by csertant</a>.",
+    "legal": "&nbsp;HoldOn Egyesület. All rights reserved."
   },
   "content": {
     "project": {
@@ -60,6 +62,11 @@
     },
     "press": {
       "press-title": "Press"
+    },
+    "legal": {
+      "intro": "Official policies that govern the HoldOn project.",
+      "terms-title": "Terms & Conditions",
+      "privacy-title": "Privacy Policy"
     }
   }
 }

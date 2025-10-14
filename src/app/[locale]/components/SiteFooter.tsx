@@ -12,6 +12,7 @@ type FooterLabels = {
 
 type SiteFooterProps = {
   menuItems: MenuItem[];
+  legalMenuItems: MenuItem[];
   footerLabels: FooterLabels;
   languageOptions: LanguageOption[];
   currentYear: number;
@@ -46,6 +47,7 @@ const socialLinks = [
 
 export function SiteFooter({
   menuItems,
+  legalMenuItems,
   footerLabels,
   languageOptions,
   currentYear,
@@ -65,6 +67,19 @@ export function SiteFooter({
               </a>
             ))}
           </nav>
+          {legalMenuItems.length > 0 ? (
+            <nav className="flex flex-wrap gap-6 text-lg font-serif font-light">
+              {legalMenuItems.map((item) => (
+                <Link
+                  key={item.href}
+                  href={item.href}
+                  className="transition-all duration-200 hover:underline hover:underline-offset-4"
+                >
+                  {item.label}
+                </Link>
+              ))}
+            </nav>
+          ) : null}
           <div className="flex flex-col gap-4 sm:flex-row sm:flex-nowrap sm:items-center sm:gap-8">
             {socialLinks.map((link) => {
               const isExternal = !link.href.startsWith("mailto");
@@ -110,7 +125,7 @@ export function SiteFooter({
             className="max-w-2xl text-sm font-sans font-light leading-relaxed text-gray-600"
           />
         </div>
-        <div className="flex w-full max-w-sm flex-col items-center gap-4 text-center font-sans text-sm text-gray-600 md:items-end md:text-right">
+        <div className="flex w-full max-w-sm flex-col items-start gap-4 text-center font-sans text-sm text-gray-600 md:items-end md:text-right">
           <RichText html={footerLabels.credits} className="font-light" />
           <RichText html={footerLabels.webDesign} className="font-light transition-colors hover:text-black" />
           <div className="flex flex-wrap items-center justify-center gap-1 md:justify-end">

@@ -15,10 +15,12 @@
     "footer-link-donate": "Támogatás",
     "footer-link-insta": "Edukáció",
     "footer-link-press": "Sajtó",
+    "footer-link-terms": "Általános Szerződési Feltételek",
+    "footer-link-privacy": "Adatkezelési tájékoztató",
     "footer-info": "Holdon Egyesület, Nytsz.: 01-02-0018388, Adószám: 19401021-1-43, Székhely: 1113 Budapest, Villányi út 72. I/1.",
     "credits": "Ikonok: a Freepiktől és a Google-től.",
-  "web-design": "<a href='https://csertant.hu'>Made with &#10084; by csertant</a>.",
-    "legal": "&nbsp;HoldOn projekt. Minden jog fenntartva!"
+    "web-design": "<a href='https://csertant.hu'>Made with &#10084; by csertant</a>.",
+    "legal": "&nbsp;HoldOn Egyesület. Minden jog fenntartva!"
   },
   "content": {
     "project": {
@@ -60,6 +62,11 @@
     },
     "press": {
       "press-title": "Sajtó"
+    },
+    "legal": {
+      "intro": "A HoldOn projekt hivatalos irányelvei és szabályzatai.",
+      "terms-title": "Általános Szerződési Feltételek",
+      "privacy-title": "Adatkezelési tájékoztató"
     }
   }
 }
