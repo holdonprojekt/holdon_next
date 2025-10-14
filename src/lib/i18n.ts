@@ -1,3 +1,4 @@
+import { cache } from "react";
 import "server-only";
 
 const dictionaries = {
@@ -10,10 +11,14 @@ export type Locale = keyof typeof dictionaries;
 export const locales = Object.keys(dictionaries) as Locale[];
 export const defaultLocale: Locale = "hu";
 
-export async function getDictionary(locale: Locale) {
+const loadDictionary = cache(async (locale: Locale) => {
   if (!locales.includes(locale)) {
     return dictionaries[defaultLocale]();
   }
 
   return dictionaries[locale]();
+});
+
+export async function getDictionary(locale: Locale) {
+  return loadDictionary(locale);
 }

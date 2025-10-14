@@ -2,8 +2,8 @@ import { promises as fs } from "fs";
 import path from "path";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
+import { cache } from "react";
 import { marked } from "marked";
-import { LangSetter } from "../../components/LangSetter";
 import { SiteHeader } from "../../components/SiteHeader";
 import { SiteFooter } from "../../components/SiteFooter";
 import { RichText } from "@/components/RichText";
@@ -31,11 +31,13 @@ type PageProps = {
   params: Promise<PageParams>;
 };
 
+export const dynamicParams = false;
+
 function isLegalSlug(value: string): value is LegalSlug {
   return value in legalPages;
 }
 
-async function loadLegalContent(locale: Locale, slug: LegalSlug) {
+const loadLegalContent = cache(async (locale: Locale, slug: LegalSlug) => {
   const filePath = path.join(process.cwd(), "src", "content", "legal", locale, `${slug}.md`);
 
   try {
@@ -44,8 +46,9 @@ async function loadLegalContent(locale: Locale, slug: LegalSlug) {
   } catch (error) {
     console.error(`Missing legal markdown at ${filePath}`, error);
     notFound();
+    throw error instanceof Error ? error : new Error("Missing legal markdown");
   }
-}
+});
 
 export async function generateStaticParams() {
   return locales.flatMap((locale) =>
@@ -125,7 +128,6 @@ export default async function LegalPage({ params }: PageProps) {
 
   return (
     <>
-      <LangSetter locale={locale} />
       <SiteHeader menuItems={menuItems} languageOptions={languageOptions} title={dictionary.head["page-title"]} />
       <main className="relative flex min-h-screen flex-col bg-[#f5f1db] px-6 py-24">
         <div className="mx-auto flex w-full max-w-4xl flex-col gap-10">

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { ContextMenuBlocker } from "./components/ContextMenuBlocker";
 import { arbutus, cookie, sourceSans } from "./fonts";
+import { defaultLocale, locales, type Locale } from "@/lib/i18n";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://holdonprojekt.hu"),
@@ -32,13 +33,28 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({
-  children,
-}: Readonly<{
+type RootLayoutParams = {
+  locale?: string;
+};
+
+type RootLayoutProps = Readonly<{
   children: React.ReactNode;
-}>) {
+  params: Promise<RootLayoutParams>;
+}>;
+
+export default async function RootLayout({
+  children,
+  params,
+}: RootLayoutProps) {
+  const fallbackLocale = defaultLocale;
+  const resolvedParams = await params;
+  const localeParam = resolvedParams?.locale;
+  const locale = (locales.includes(localeParam as Locale)
+    ? localeParam
+    : fallbackLocale) as Locale;
+
   return (
-    <html lang="hu" suppressHydrationWarning>
+    <html lang={locale} suppressHydrationWarning>
       <body className={`${arbutus.variable} ${sourceSans.variable} ${cookie.variable} antialiased`}>
         <ContextMenuBlocker>{children}</ContextMenuBlocker>
       </body>

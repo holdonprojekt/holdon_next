@@ -8,7 +8,6 @@ import { SiteFooter } from "./components/SiteFooter";
 import { RichText } from "@/components/RichText";
 import { getDictionary, locales, type Locale } from "@/lib/i18n";
 import { PressList } from "./components/PressList";
-import { LangSetter } from "./components/LangSetter";
 import { CopyField } from "./components/CopyField";
 
 const projectBackground = "rgba(228, 218, 175, 0.95)";
@@ -28,6 +27,8 @@ type PageParams = {
 type PageProps = {
   params: Promise<PageParams>;
 };
+
+export const dynamicParams = false;
 
 export default async function HoldOnPage({ params }: PageProps) {
   const { locale: localeParam } = await params;
@@ -82,7 +83,6 @@ export default async function HoldOnPage({ params }: PageProps) {
 
   return (
     <>
-      <LangSetter locale={locale} />
       <SiteHeader
         menuItems={menuItems}
         languageOptions={languageOptions}
@@ -178,7 +178,7 @@ export default async function HoldOnPage({ params }: PageProps) {
         languageOptions={languageOptions}
         currentYear={currentYear}
       />
-      <Script src="https://embedsocial.com/cdn/ht.js" strategy="afterInteractive" />
+      <Script src="https://embedsocial.com/cdn/ht.js" strategy="lazyOnload" />
     </>
   );
 }
