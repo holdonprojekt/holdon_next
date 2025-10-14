@@ -9,6 +9,7 @@ import { RichText } from "@/components/RichText";
 import { getDictionary, locales, type Locale } from "@/lib/i18n";
 import { PressList } from "./components/PressList";
 import { LangSetter } from "./components/LangSetter";
+import { CopyField } from "./components/CopyField";
 
 const projectBackground = "rgba(228, 218, 175, 0.95)";
 const aboutBackground = "rgba(233, 227, 188, 0.95)";
@@ -42,6 +43,12 @@ export default async function HoldOnPage({ params }: PageProps) {
   const footer = dictionary.footer;
   const content = dictionary.content;
   const currentYear = new Date().getFullYear();
+  const donateDetails = (content.donate["donate-details"] ?? []) as Array<{
+    label: string;
+    value: string;
+  }>;
+  const copyLabel = content.donate["donate-copy-label"] ?? "Copy";
+  const copiedLabel = content.donate["donate-copied-label"] ?? "Copied";
   const scrollLabel =
     locale === "hu"
       ? "Görgetés lefelé"
@@ -123,12 +130,19 @@ export default async function HoldOnPage({ params }: PageProps) {
             <RichText html={content.donate["donate-p2"]} className="text-lg font-light leading-relaxed" />
             <RichText html={content.donate["donate-p3"]} className="text-lg font-light leading-relaxed" />
           </div>
-          <div className="flex w-full max-w-sm flex-col gap-3 rounded-3xl bg-white/80 p-6 text-base shadow-lg shadow-black/5">
-            <RichText html={content.donate["donate-li1"]} className="font-light" />
-            <RichText html={content.donate["donate-li2"]} className="font-light" />
-            <RichText html={content.donate["donate-li3"]} className="font-light" />
-            <RichText html={content.donate["donate-li4"]} className="font-light" />
-          </div>
+          {donateDetails.length > 0 ? (
+            <div className="flex w-full max-w-md flex-col gap-4">
+              {donateDetails.map((detail) => (
+                <CopyField
+                  key={`${detail.label}-${detail.value}`}
+                  label={detail.label}
+                  value={detail.value}
+                  copyLabel={copyLabel}
+                  copiedLabel={copiedLabel}
+                />
+              ))}
+            </div>
+          ) : null}
         </Section>
         <section
           id="insta-content"

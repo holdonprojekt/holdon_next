@@ -70,7 +70,7 @@ export function SiteHeader({ menuItems, languageOptions, title }: SiteHeaderProp
         aria-expanded={isOpen}
         aria-label="Open navigation"
         onClick={() => setIsOpen(true)}
-        className={`fixed right-4 top-6 z-40 flex items-center gap-3 rounded-full bg-white/90 px-5 py-3 shadow-header backdrop-blur transition-all duration-200 hover:bg-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-shakespeare md:right-12 ${
+        className={`fixed right-4 top-6 z-40 flex items-center gap-3 rounded-full bg-white/90 px-5 py-3 backdrop-blur transition-all duration-200 hover:bg-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-shakespeare md:right-12 ${
           isOpen ? "pointer-events-none -translate-y-2 opacity-0" : "pointer-events-auto"
         }`}
       >
@@ -80,23 +80,23 @@ export function SiteHeader({ menuItems, languageOptions, title }: SiteHeaderProp
           width={48}
           height={48}
           priority
-          className="h-10 w-10 drop-shadow-sm"
+          className="h-10 w-10"
         />
-        <span className={`${cookie.className} text-2xl text-black drop-shadow-sm md:text-3xl`}>
+        <span className={`${cookie.className} text-2xl text-black md:text-3xl`}>
           {title}
         </span>
       </button>
       <div
         ref={panelRef}
-        className={`fixed left-1/2 top-4 z-40 w-[calc(100%-1.5rem)] max-w-6xl -translate-x-1/2 overflow-hidden rounded-4xl bg-white/95 shadow-2xl backdrop-blur transition-all duration-300 md:top-10 md:w-[calc(100%-5rem)] ${
+        className={`fixed left-1/2 top-4 z-40 w-[calc(100%-1.5rem)] max-w-8xl -translate-x-1/2 overflow-hidden rounded-4xl bg-white/95 backdrop-blur transition-all duration-300 md:top-6 md:w-[calc(100%-6rem)] ${
           isOpen
             ? "pointer-events-auto translate-y-0 opacity-100"
             : "pointer-events-none -translate-y-[130%] opacity-0"
         }`}
       >
-        <div className="grid gap-8 px-8 py-10 md:grid-cols-[auto_1fr_auto] md:items-center md:gap-12 md:px-16 md:py-12">
+        <div className="grid gap-8 px-8 py-8 md:grid-cols-[auto_1fr_auto] md:items-center md:gap-12 md:px-16 md:py-12">
           <a
-            href="#hero"
+            href="#"
             className="flex items-center gap-4 text-black"
             onClick={() => setIsOpen(false)}
           >
@@ -124,7 +124,7 @@ export function SiteHeader({ menuItems, languageOptions, title }: SiteHeaderProp
               </a>
             ))}
           </nav>
-          <div className="flex flex-col items-end gap-6 md:flex-col-reverse md:items-end">
+          <div className="flex flex-col items-end gap-6 md:items-end">
             <button
               type="button"
               aria-label="Close navigation"
