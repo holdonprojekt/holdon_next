@@ -82,7 +82,7 @@ export function SiteHeader({ menuItems, languageOptions, title }: SiteHeaderProp
           priority
           className="h-10 w-10 drop-shadow-sm"
         />
-        <span className={`${cookie.className} text-2xl text-shakespeare drop-shadow-sm md:text-3xl`}>
+        <span className={`${cookie.className} text-2xl text-black drop-shadow-sm md:text-3xl`}>
           {title}
         </span>
       </button>
@@ -97,7 +97,7 @@ export function SiteHeader({ menuItems, languageOptions, title }: SiteHeaderProp
         <div className="grid gap-8 px-8 py-10 md:grid-cols-[auto_1fr_auto] md:items-center md:gap-12 md:px-16 md:py-12">
           <a
             href="#hero"
-            className="flex items-center gap-4 text-shakespeare transition-colors hover:text-copperrose"
+            className="flex items-center gap-4 text-black"
             onClick={() => setIsOpen(false)}
           >
             <Image
@@ -145,7 +145,7 @@ export function SiteHeader({ menuItems, languageOptions, title }: SiteHeaderProp
                   onClick={() => setIsOpen(false)}
                   className={
                     option.isActive
-                      ? "rounded-full border border-shakespeare px-4 py-1 font-medium text-shakespeare transition-all duration-200"
+                      ? "rounded-full border border-black px-4 py-1 font-medium text-black"
                       : "rounded-full border border-gray-300 px-4 py-1 text-gray-600 font-light transition-all duration-200 hover:border-black/30 hover:text-black"
                   }
                 >

@@ -34,11 +34,11 @@ export function Hero({ title, scrollTarget, scrollLabel }: HeroProps) {
       </div>
       <a
         href={scrollTarget}
-        className="absolute bottom-4 left-1/2 -translate-x-1/2 text-shakespeare transition-colors hover:text-copperrose"
+        className="absolute bottom-4 left-1/2 -translate-x-1/2 text-black transition-colors hover:text-black/75"
       >
         <span className="sr-only">{scrollLabel}</span>
         <span className="relative block h-20 w-10 rounded-full border-2 border-current">
-          <span className="absolute left-1/2 top-2 h-3 w-3 -translate-x-1/2 rounded-full bg-current animate-scrollBounce" />
+          <span className="scroll-indicator-dot absolute left-1/2 top-2 h-3 w-3 -translate-x-1/2 rounded-full bg-current" />
         </span>
       </a>
     </section>

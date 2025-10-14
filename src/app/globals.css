@@ -46,4 +46,54 @@
 	.text-shadow {
 		text-shadow: 0 10px 30px rgba(0, 0, 0, 0.18);
 	}
+
+	.text-shakespeare {
+		color: #4ba2ca;
+	}
+
+	.hover\:text-shakespeare:hover {
+		color: #4ba2ca;
+	}
+
+	.text-tussock {
+		color: #bc9c47;
+	}
+
+	.hover\:text-tussock:hover {
+		color: #bc9c47;
+	}
+
+	.border-shakespeare {
+		border-color: #4ba2ca;
+	}
+
+	.hover\:border-shakespeare:hover {
+		border-color: #4ba2ca;
+	}
+}
+
+@layer theme {
+	:root {
+		--color-shakespeare: #4ba2ca;
+		--color-tussock: #bc9c47;
+		--color-raffia: #e9e3bc;
+	}
+}
+
+@keyframes hero-scroll-bounce {
+	0%, 100% {
+		transform: translateY(0);
+		opacity: 1;
+	}
+
+	50% {
+		transform: translateY(2.75rem);
+		opacity: 0.8;
+	}
+}
+
+@layer components {
+	.scroll-indicator-dot {
+		animation: hero-scroll-bounce 1.5s ease-in-out infinite;
+	}
 }
