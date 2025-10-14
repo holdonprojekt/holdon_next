@@ -1,0 +1,77 @@
+{
+  "head": {
+    "page-title": "HoldOn"
+  },
+  "navigation": {
+    "nav-link-project": "Projet",
+    "nav-link-about": "À propos",
+    "nav-link-donate": "Soutenir",
+    "nav-link-insta": "Éducation",
+    "nav-link-press": "Presse"
+  },
+  "footer": {
+    "footer-link-project": "Projet",
+    "footer-link-about": "À propos",
+    "footer-link-donate": "Soutenir",
+    "footer-link-insta": "Éducation",
+    "footer-link-press": "Presse",
+    "footer-link-terms": "Conditions générales",
+    "footer-link-privacy": "Politique de confidentialité",
+    "footer-info": "HoldOn Egyesület, n° d'enregistrement : 01-02-0018388, NIF : 19401021-1-43, Adresse : 1113 Budapest, Villányi út 72. I/1.",
+    "credits": "Icônes : Freepik & Google.",
+    "web-design": "<a href='https://csertant.hu'>Créé avec &#10084; par csertant</a>.",
+    "legal": "&nbsp;HoldOn Egyesület. Tous droits réservés."
+  },
+  "content": {
+    "project": {
+      "project-title": "Le projet",
+      "project-p1": "Nous souhaitons accompagner les femmes dans leur réintégration sociale et leur quotidien, où une hygiène adaptée est indispensable. Notre premier objectif est d'offrir aux femmes de notre entourage des produits d'hygiène de base, comme des serviettes hygiéniques.",
+      "project-p2": "Compte tenu de la sensibilité du sujet, nous avons recherché une solution qui nous permette d'apporter notre aide sans nous imposer, afin d'atténuer le sentiment de honte des femmes concernées. Nous voulons créer un espace sûr où elles peuvent accéder aux produits dont elles ont besoin à tout moment. C'est pourquoi, à l'automne 2022, nous avons installé un distributeur automatique dans le 8e arrondissement de Budapest, dans un lieu sécurisé, au sein du Centre de soutien familial de Józsefváros, où ces produits sont disponibles gratuitement. <strong>Moins d'un an après son installation, le projet a suscité un vif intérêt : la mairie d'arrondissement a pris en charge l'approvisionnement du distributeur et s'est engagée à en installer d'autres dans le quartier. HoldOn a également étendu son réseau en installant deux nouveaux distributeurs là où ils peuvent faire la plus grande différence : dans deux centres d'hébergement pour personnes sans abri. Grâce à notre capacité actuelle, nous aidons directement près de 150 femmes chaque mois.</strong>",
+      "project-p3": "Les études montrent que la pauvreté menstruelle — l'absence d'accès aux produits d'hygiène menstruelle et aux connaissances qui y sont liées — touche une femme sur cinq. Ce chiffre est probablement sous-estimé, car le sujet reste tabou dans notre société. Nous voulons sensibiliser le public à travers des publications éducatives sur les réseaux sociaux afin que le plus grand nombre comprenne ce phénomène. Nous pensons qu'il est de notre responsabilité commune de protéger la dignité des autres, et nous souhaitons incarner cette idée de manière proactive. Nous voulons soutenir les personnes les plus vulnérables pour qu'elles ne considèrent pas leur féminité comme un fardeau; c'est pour cela que nous avons choisi le 8e arrondissement, où de nombreuses femmes et jeunes filles sont concernées."
+    },
+    "about": {
+      "about-title": "À propos de nous",
+      "about-p1": "Pour nous, HoldOn n'est pas un projet éphémère né d'un simple enthousiasme estudiantin; il repose sur des bases solides, construites grâce à de longues discussions et à des échanges d'idées et d'expériences. Lors de la conception du projet, nous avons consulté des spécialistes du domaine et reçu la confirmation que notre initiative comble un besoin réel. Notre objectif est d'assurer un soutien financier durable et sécurisé pour le projet.",
+      "about-p2": "Aujourd'hui, une douzaine d'étudiantes et d'étudiants bénévoles font vivre le projet. Certain·e·s se consacrent à la rédaction de demandes de subventions et à la recherche de financements, d'autres s'occupent des aspects techniques et mécaniques du distributeur automatique, tandis que d'autres encore gèrent le marketing, la présence en ligne et les réseaux sociaux. Une autre partie de l'équipe travaille sur la stratégie, le contact avec les expert·e·s et la recherche de soutiens. Beaucoup de travail de fond est actuellement en cours et constitue l'ossature du projet. À l'avenir, nous souhaitons impliquer les équipes de terrain ou collaborer avec d'autres étudiant·e·s afin de garantir la stabilité financière, par exemple via des subventions ou des campagnes de collecte de fonds."
+    },
+    "donate": {
+      "donate-title": "Comment nous aider ?",
+      "donate-p1": "Nous avons avant tout besoin d'un soutien régulier pour financer le réapprovisionnement en serviettes hygiéniques du distributeur. Nous acceptons avec gratitude les dons de produits d'hygiène ainsi que les contributions financières régulières.",
+      "donate-p2": "Nous recherchons actuellement des partenaires entreprises avec lesquels nous pouvons bâtir une coopération régulière et durable. D'après notre expérience, les relations personnelles sont essentielles pour mobiliser les soutien·ne·s. Si vous connaissez quelqu'un travaillant dans une entreprise qui fabrique ou distribue des serviettes hygiéniques, ou dont la responsabilité sociétale pourrait inclure notre projet, écrivez-nous à <strong>holdon@holdonprojekt.hu</strong>.",
+      "donate-p3": "Il est également possible d'apporter un <strong>soutien financier individuel</strong> en effectuant un virement sur le compte indiqué à droite. Merci de préciser \"Don\" dans le champ de référence. Nous vous sommes profondément reconnaissant·e·s pour toute forme d'aide !",
+      "donate-details": [
+        {
+          "label": "Bénéficiaire",
+          "value": "HoldOn Egyesület"
+        },
+        {
+          "label": "Virement national",
+          "value": "11600006-00000002-01591369"
+        },
+        {
+          "label": "Virement international",
+          "value": "IBAN: HU74116000060000000201591369, BIC: GIBAHUHBXXX, Erste Bank Hungary Zrt. NEPFURDO U. 24-26, Budapest, Hungary"
+        },
+        {
+          "label": "Référence",
+          "value": "Don"
+        }
+      ],
+      "donate-copy-label": "Copier",
+      "donate-copied-label": "Copié"
+    },
+    "press": {
+      "press-title": "Presse"
+    },
+    "legal": {
+      "intro": "Les politiques officielles qui régissent le projet HoldOn.",
+      "terms-title": "Conditions générales",
+      "privacy-title": "Politique de confidentialité"
+    }
+  },
+  "notFound": {
+    "title": "Nous ne trouvons pas cette page",
+    "description": "Elle a peut-être été déplacée ou n'a jamais existé. Revenez à la page principale pour continuer à découvrir HoldOn.",
+    "cta": "Retour à l'accueil"
+  }
+}

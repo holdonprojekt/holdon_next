@@ -56,7 +56,10 @@ export function SiteFooter({
   <footer className="bg-white px-6 py-12 backdrop-blur">
       <div className="mx-auto flex w-full max-w-6xl flex-col gap-10 md:flex-row md:items-end md:justify-between">
         <div className="flex flex-col gap-8 md:w-2/3">
-          <nav className="flex flex-wrap gap-6 text-lg font-serif font-light">
+          <nav
+            className="flex flex-wrap gap-6 text-lg font-serif font-light"
+            aria-label="Footer"
+          >
             {menuItems.map((item) => (
               <a
                 key={item.href}
@@ -68,11 +71,15 @@ export function SiteFooter({
             ))}
           </nav>
           {legalMenuItems.length > 0 ? (
-            <nav className="flex flex-wrap gap-6 text-lg font-serif font-light">
+            <nav
+              className="flex flex-wrap gap-6 text-lg font-serif font-light"
+              aria-label="Legal"
+            >
               {legalMenuItems.map((item) => (
                 <Link
                   key={item.href}
                   href={item.href}
+                  hrefLang={item.href.split("/")[1] ?? undefined}
                   className="transition-all duration-200 hover:underline hover:underline-offset-4"
                 >
                   {item.label}
@@ -90,6 +97,7 @@ export function SiteFooter({
                   alt={`${link.label} icon`}
                   width={24}
                   height={24}
+                  loading="lazy"
                   className="h-6 w-6"
                 />
                   <a
@@ -110,6 +118,7 @@ export function SiteFooter({
                 key={option.label}
                 href={option.href}
                 scroll={false}
+                hrefLang={option.label}
                 className={
                   option.isActive
                     ? "rounded-full border border-black px-3 py-1 font-medium text-black"

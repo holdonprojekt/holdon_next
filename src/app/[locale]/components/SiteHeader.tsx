@@ -112,7 +112,10 @@ export function SiteHeader({ menuItems, languageOptions, title }: SiteHeaderProp
               {title}
             </span>
           </a>
-          <nav className="flex flex-col gap-5 text-xl font-serif font-light text-gray-700 md:flex-row md:items-center md:justify-center md:gap-12">
+          <nav
+            className="flex flex-col gap-5 text-xl font-serif font-light text-gray-700 md:flex-row md:items-center md:justify-center md:gap-12"
+            aria-label="Primary"
+          >
             {menuItems.map((item) => (
               <a
                 key={item.href}
@@ -142,6 +145,7 @@ export function SiteHeader({ menuItems, languageOptions, title }: SiteHeaderProp
                   key={option.label}
                   href={option.href}
                   scroll={false}
+                  hrefLang={option.label}
                   onClick={() => setIsOpen(false)}
                   className={
                     option.isActive

@@ -68,5 +68,10 @@
       "terms-title": "Általános Szerződési Feltételek",
       "privacy-title": "Adatkezelési tájékoztató"
     }
+  },
+  "notFound": {
+    "title": "Úgy tűnik, ez az oldal eltűnt",
+    "description": "Lehet, hogy elköltözött, vagy sosem létezett. Térj vissza a főoldalra, és fedezd fel a HoldOn projektet!",
+    "cta": "Vissza a főoldalra"
   }
 }

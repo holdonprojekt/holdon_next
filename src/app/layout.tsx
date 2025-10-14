@@ -24,12 +24,10 @@ export const metadata: Metadata = {
     type: "website",
   },
   icons: {
-    icon: "/assets/holdcikk-01.ico",
+    icon: "favicon.ico",
   },
   other: {
-    "Cache-Control": "no-cache",
-    "revised": "22/01/2025",
-    "author": "Tamas Csertan",
+    "revised": "14/10/2025",
   },
 };
 

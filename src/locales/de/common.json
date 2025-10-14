@@ -68,5 +68,10 @@
       "terms-title": "Allgemeine Geschäftsbedingungen",
       "privacy-title": "Datenschutzerklärung"
     }
+  },
+  "notFound": {
+    "title": "Diese Seite gibt es hier nicht",
+    "description": "Vielleicht wurde sie verschoben oder hat nie existiert. Kehre zur Startseite zurück und entdecke das HoldOn Projekt.",
+    "cta": "Zur Startseite"
   }
 }

@@ -1,14 +1,15 @@
 import Image from "next/image";
-import Script from "next/script";
+import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { Hero } from "./components/Hero";
 import { SiteHeader } from "./components/SiteHeader";
 import { Section } from "./components/Section";
 import { SiteFooter } from "./components/SiteFooter";
 import { RichText } from "@/components/RichText";
-import { getDictionary, locales, type Locale } from "@/lib/i18n";
+import { defaultLocale, getDictionary, locales, type Locale } from "@/lib/i18n";
 import { PressList } from "./components/PressList";
 import { CopyField } from "./components/CopyField";
+import { EmbedSocialFeed } from "./components/EmbedSocialFeed";
 
 const projectBackground = "rgba(228, 218, 175, 0.95)";
 const aboutBackground = "rgba(233, 227, 188, 0.95)";
@@ -29,6 +30,74 @@ type PageProps = {
 };
 
 export const dynamicParams = false;
+
+const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://holdonprojekt.hu";
+
+const stripHtml = (value: string) => value.replace(/<[^>]*>/g, " ").replace(/\s+/g, " ").trim();
+
+const baseKeywords = ["HoldOn", "HoldOn projekt", "menstruációs szegénység", "adományozás"];
+
+const normalizeUrl = (url: string) => url.replace(/\/$/, "");
+
+export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
+  const { locale: localeParam } = await params;
+
+  if (!locales.includes(localeParam as Locale)) {
+    return {};
+  }
+
+  const locale = localeParam as Locale;
+  const dictionary = await getDictionary(locale);
+  const siteName = "HoldOn projekt";
+  const head = dictionary.head as Record<string, unknown>;
+  const localizedTitle = typeof head["page-title"] === "string"
+    ? (head["page-title"] as string)
+    : siteName;
+  const fullTitle = `${localizedTitle} | ${siteName}`;
+  const projectIntroHtml = dictionary.content?.project?.["project-p1"] ?? "";
+  const headDescription = head["page-description"];
+  const localizedDescription = typeof headDescription === "string" ? headDescription : undefined;
+  const description = localizedDescription && localizedDescription.trim().length > 0
+    ? localizedDescription
+    : stripHtml(projectIntroHtml) || "HoldOn projekt a menstruációs szegénységben élőkért.";
+
+  const keywordOverride = head["page-keywords"];
+  const keywords = Array.isArray(keywordOverride)
+    ? keywordOverride.filter((value): value is string => typeof value === "string" && value.trim().length > 0)
+    : baseKeywords;
+
+  const normalizedBase = normalizeUrl(BASE_URL);
+  const localePath = locale === defaultLocale ? "" : `/${locale}`;
+  const canonicalPath = locale === defaultLocale ? "/" : `/${locale}`;
+  const canonicalUrl = `${normalizedBase}${localePath}` || normalizedBase;
+  const languages = Object.fromEntries(
+    locales.map((lang) => [lang, lang === defaultLocale ? "/" : `/${lang}`])
+  );
+
+  return {
+    title: fullTitle,
+    description,
+    keywords,
+    alternates: {
+      canonical: canonicalPath,
+      languages,
+    },
+    openGraph: {
+      type: "website",
+      title: fullTitle,
+      description,
+      url: canonicalUrl,
+      siteName: siteName,
+      locale,
+      alternateLocale: locales.filter((lang) => lang !== locale),
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: fullTitle,
+      description,
+    },
+  };
+}
 
 export default async function HoldOnPage({ params }: PageProps) {
   const { locale: localeParam } = await params;
@@ -153,9 +222,10 @@ export default async function HoldOnPage({ params }: PageProps) {
           className="flex min-h-[60vh] flex-col items-center justify-center px-4 py-16"
           style={{ backgroundColor: instaBackground }}
         >
-          <div
+          <EmbedSocialFeed
+            locale={locale}
+            reference="72bc8b89bafe46e11ca936c8cb29e1d147173b2d"
             className="embedsocial-hashtag w-full max-w-5xl"
-            data-ref="72bc8b89bafe46e11ca936c8cb29e1d147173b2d"
           />
         </section>
         <Section
@@ -178,7 +248,6 @@ export default async function HoldOnPage({ params }: PageProps) {
         languageOptions={languageOptions}
         currentYear={currentYear}
       />
-      <Script src="https://embedsocial.com/cdn/ht.js" strategy="lazyOnload" />
     </>
   );
 }

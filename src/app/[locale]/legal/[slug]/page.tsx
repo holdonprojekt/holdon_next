@@ -8,19 +8,7 @@ import { SiteHeader } from "../../components/SiteHeader";
 import { SiteFooter } from "../../components/SiteFooter";
 import { RichText } from "@/components/RichText";
 import { getDictionary, locales, type Locale } from "@/lib/i18n";
-
-const legalPages = {
-  terms: {
-    footerKey: "footer-link-terms",
-    titleKey: "terms-title",
-  },
-  privacy: {
-    footerKey: "footer-link-privacy",
-    titleKey: "privacy-title",
-  },
-} as const;
-
-type LegalSlug = keyof typeof legalPages;
+import { legalPages, legalSlugs, type LegalSlug } from "@/lib/legal";
 
 type PageParams = {
   locale: string;
@@ -51,9 +39,7 @@ const loadLegalContent = cache(async (locale: Locale, slug: LegalSlug) => {
 });
 
 export async function generateStaticParams() {
-  return locales.flatMap((locale) =>
-    (Object.keys(legalPages) as LegalSlug[]).map((slug) => ({ locale, slug }))
-  );
+  return locales.flatMap((locale) => legalSlugs.map((slug) => ({ locale, slug })));
 }
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {

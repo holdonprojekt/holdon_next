@@ -1,3 +1,7 @@
+# HoldOn Homepage
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/a52b5a76-9f13-4d39-a5a6-cb8e276592e1/deploy-status)](https://app.netlify.com/projects/holdonprojekt/deploys)
+
 ## Overview
 
 Modern refactor of the HoldOn project website using the Next.js App Router and Tailwind CSS while keeping the original visual language. Content is served in Hungarian, English and Deutsch from JSON dictionaries and rendered on the server for fast loads.
