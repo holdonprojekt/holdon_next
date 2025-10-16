@@ -11,7 +11,7 @@ export function Hero({ title, scrollTarget, scrollLabel }: HeroProps) {
   return (
     <section
       id="hero"
-  className="relative flex min-h-screen flex-col items-center justify-center overflow-hidden bg-[#e9e3bc] px-4 pt-32 md:flex-row md:items-stretch md:bg-[url('/assets/bg.webp')] md:bg-contain md:bg-fixed md:bg-right-top md:bg-no-repeat md:px-20"
+      className="relative flex min-h-screen flex-col items-center justify-center overflow-hidden bg-[#e9e3bc] bg-[url('/assets/bg.webp')] bg-cover bg-top bg-no-repeat px-4 pt-32 md:flex-row md:items-stretch md:bg-contain md:bg-fixed md:bg-right-top md:px-20"
     >
       <div className="pointer-events-none absolute inset-0">
         <div className="absolute -top-48 -left-[30vw] hidden w-[70vw] max-w-[900px] md:block">
@@ -26,6 +26,16 @@ export function Hero({ title, scrollTarget, scrollLabel }: HeroProps) {
         </div>
       </div>
       <div className="relative flex w-full flex-col items-center gap-8 md:ml-auto md:max-w-2xl md:items-center md:justify-center">
+        <div className="w-full max-w-xs md:hidden">
+          <Image
+            src="/assets/holdcikk-01.webp"
+            alt="HoldOn logó"
+            width={200}
+            height={200}
+            priority
+            className="mx-auto"
+          />
+        </div>
         <h1
           className={`${cookie.className} text-center text-6xl text-black drop-shadow-md md:text-8xl lg:text-9xl`}
         >

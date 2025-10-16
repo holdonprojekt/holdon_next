@@ -64,7 +64,7 @@ export function CopyField({ label, value, copyLabel = "Copy", copiedLabel = "Cop
               <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1" />
             </svg>
           )}
-          <span className="text-xs">{copied ? copiedLabel : copyLabel}</span>
+          <span className="hidden text-xs lg:inline">{copied ? copiedLabel : copyLabel}</span>
         </button>
       </div>
     </div>
