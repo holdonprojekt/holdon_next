@@ -1,10 +1,21 @@
 import Link from "next/link";
-import { pressItems } from "@/content/press";
 
-export function PressList() {
+export type PressItem = {
+  date: string;
+  title: string;
+  href: string;
+  excerpt: string;
+  sourceLabel: string;
+};
+
+type PressListProps = {
+  items: PressItem[];
+};
+
+export function PressList({ items }: PressListProps) {
   return (
     <div className="grid w-full max-w-5xl gap-8">
-      {pressItems.map((item) => (
+      {items.map((item) => (
         <article
           key={`${item.date}-${item.href}`}
           className="rounded-3xl bg-white/85 p-8 shadow-lg shadow-black/5 backdrop-blur"

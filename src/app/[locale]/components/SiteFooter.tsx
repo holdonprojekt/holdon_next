@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { RichText } from "@/components/RichText";
+import { RichText } from "@/app/components/RichText";
 import type { LanguageOption, MenuItem } from "./SiteHeader";
 
 type FooterLabels = {
@@ -54,7 +54,7 @@ export function SiteFooter({
 }: SiteFooterProps) {
   return (
   <footer className="bg-white px-6 py-12 backdrop-blur">
-      <div className="mx-auto flex w-full max-w-6xl flex-col gap-10 md:flex-row md:items-end md:justify-between">
+      <div className="mx-auto flex w-[calc(100%-3rem)] max-w-8xl flex-col gap-10 lg:flex-row lg:items-end lg:justify-between">
         <div className="flex flex-col gap-8 md:w-2/3">
           <nav
             className="flex flex-wrap gap-6 text-lg font-serif font-light"
@@ -134,10 +134,10 @@ export function SiteFooter({
             className="max-w-2xl text-sm font-sans font-light leading-relaxed text-gray-600"
           />
         </div>
-        <div className="flex w-full max-w-sm flex-col items-start gap-4 text-center font-sans text-sm text-gray-600 md:items-end md:text-right">
+        <div className="flex w-full max-w-sm flex-col items-start gap-4 text-start font-sans text-sm text-gray-600 lg:items-end lg:text-end">
           <RichText html={footerLabels.credits} className="font-light" />
           <RichText html={footerLabels.webDesign} className="font-light transition-colors hover:text-black" />
-          <div className="flex flex-wrap items-center justify-center gap-1 md:justify-end">
+          <div className="flex flex-wrap justify-center gap-1 lg:justify-end">
             <span>©2021-{currentYear}</span>
             <RichText html={footerLabels.legal} className="inline font-light" as="span" />
           </div>

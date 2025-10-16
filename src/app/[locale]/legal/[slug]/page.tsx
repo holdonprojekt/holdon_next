@@ -6,7 +6,7 @@ import { cache } from "react";
 import { marked } from "marked";
 import { SiteHeader } from "../../components/SiteHeader";
 import { SiteFooter } from "../../components/SiteFooter";
-import { RichText } from "@/components/RichText";
+import { RichText } from "@/app/components/RichText";
 import { getDictionary, locales, type Locale } from "@/lib/i18n";
 import { legalPages, legalSlugs, type LegalSlug } from "@/lib/legal";
 
@@ -26,7 +26,7 @@ function isLegalSlug(value: string): value is LegalSlug {
 }
 
 const loadLegalContent = cache(async (locale: Locale, slug: LegalSlug) => {
-  const filePath = path.join(process.cwd(), "src", "content", "legal", locale, `${slug}.md`);
+  const filePath = path.join(process.cwd(), "src", "locales", locale, "legal", `${slug}.md`);
 
   try {
     const markdown = await fs.readFile(filePath, "utf8");

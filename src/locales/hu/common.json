@@ -17,28 +17,28 @@
     "footer-link-press": "Sajtó",
     "footer-link-terms": "Általános Szerződési Feltételek",
     "footer-link-privacy": "Adatkezelési tájékoztató",
-    "footer-info": "Holdon Egyesület, Nytsz.: 01-02-0018388, Adószám: 19401021-1-43, Székhely: 1113 Budapest, Villányi út 72. I/1.",
-    "credits": "Ikonok: a Freepiktől és a Google-től.",
+    "footer-info": "Holdon Egyesület, Nytsz. : 01-02-0018388, Adószám : 19401021-1-43, Székhely : 1113 Budapest, Villányi út 72. I/1.",
+    "credits": "Némely ikon a Freepik vagy a Google szabad felhasználású szellemi terméke.",
     "web-design": "<a href='https://csertant.hu'>Made with &#10084; by csertant</a>.",
-    "legal": "&nbsp;HoldOn Egyesület. Minden jog fenntartva!"
+    "legal": "HoldOn Egyesület. Minden jog fenntartva!"
   },
   "content": {
     "project": {
       "project-title": "A projektről",
-      "project-p1": "Szeretnénk segíteni a nőket, hogy visszaléphessenek a társadalomba és a mindennapokba, melyhez elengedhetetlen a megfelelő higiénia. Projektünk célja, hogy első lépésként a szűkebb környezetünkben élő nőket segítsük olyan alapvető higiéniai termékekkel, mint az egészségügyi betét.",
-      "project-p2": "A téma intimitásának megfelelően olyan megoldást kerestünk, melynek keretein beül tolakodás nélkül tudunk segítséget biztosítani, ezzel is enyhítve az érintett nők szégyenérzetét. Egy biztonságos bázist szeretnénk létrehozni, ahol bármikor hozzájuthatnak a szükséges termékekhez. Ennek érdekében <strong>2022 őszén felállítottunk egy automatát</strong> a nyolcadik kerületben egy védett helyen, a Józsefvárosi Családsegítő Központban, ahol ingyen beszerezhetőek ezek a termékek. <strong>Alig egy évvel a felállítása után a kerületi önkormányzat átvette az automata fenntartását, valamint további automaták felállítására vállalkozott. A HoldOn is bővítette a hálózatát, a két új automatánkat a leghátrányosabb helyzetekben élőkre fókuszálva két különböző hajléktalanszállón állítottuk fel. A jelenlegi kapacitásunknak köszönhetően havonta közel 150 nőnek tudjuk stabilan biztosítani a betéthez jutást.</strong>",
-      "project-p3": "Egyes kutatások szerint minden ötödik nőt érint a menstruációs szegénység kérdésköre, azonban minden bizonnyal ez nem pontos adat, tekintve, hogy a témakör még mindig bújtatott, tabusított jelenség itthon. Ezért is szeretnénk ezzel a projekttel <strong>hangot adni a menstruációs szegénység ügyének</strong>, s platformot készíteni a közösségi média felületeken közzétett edukációs posztoknak, hogy minél több emberhez, fiatalhoz és idősebbhez is egyaránt eljusson ez a jelenség, ugyanis mindannyiunk felelőssége a másik méltóságának megőrzése. Szeretnénk a legtöbb rászorulónak segíteni abban, hogy ne tehernek éljék meg a női mivoltukat; ezért is esett éppen a VIII. kerületre a választásunk, ahol számtalan olyan nő és fiatal lány él, aki érintett lehet a problémában."
+      "project-p1": "Szeretnénk segíteni a nőket, hogy ne érezzék magukat kitaszítottnak a közösségekben és a mindennapokban, melyhez elengedhetetlen a megfelelő higiénia. Projektünk célja, hogy első lépésként a szűkebb környezetünkben élő nőknek segítsük olyan alapvető higiéniai termékekkel, mint az egészségügyi betét.",
+      "project-p2": "A téma intimitásának megfelelően olyan megoldást kerestünk, melynek keretein beül tolakodás nélkül tudunk segítséget biztosítani, ezzel is enyhítve az érintett nők szégyenérzetét. Biztonságos bázist szeretnénk létrehozni, ahol bármikor hozzájuthatnak a szükséges termékekhez. Ennek érdekében <strong>2022 őszén felállítottunk egy automatát</strong> a nyolcadik kerületben, a Józsefvárosi Családsegítő Központban, ami ingyenes betéteket szolgáltat. Alig egy évvel a felállítása után a kerületi önkormányzat átvette az automata fenntartását, valamint további automaták felállítására vállalkozott. A HoldOn is <strong>bővítette a hálózatát, két automatánkat a leghátrányosabb helyzetekben élőkre fókuszálva hajléktalanszállókon állítottuk fel. 2025 tavaszán a dm drogerie markt Kft. adományainak jóvoltából még két automatát helyeztünk üzembe Csepelen és Ferencvárosban. A jelenlegi kapacitásunknak köszönhetően havonta közel 300 nőnek tudjuk stabilan biztosítani a betéthez jutást.</strong>",
+      "project-p3": "Egyes kutatások szerint minden ötödik nőt érint a menstruációs szegénység kérdésköre, azonban minden bizonnyal ez nem pontos adat, tekintve, hogy a témakör még mindig bújtatott, tabusított jelenség itthon. Ezért is szeretnénk ezzel a projekttel <strong>hangot adni a menstruációs szegénység ügyének</strong>, s platformot készíteni a közösségi média felületeken közzétett edukációs posztoknak, hogy minél több emberhez, fiatalhoz és idősebbhez is egyaránt eljusson ez a jelenség, ugyanis mindannyiunk felelőssége a másik méltóságának megőrzése. Szeretnénk a legtöbb rászorulónak segíteni abban, hogy ne tehernek éljék meg a női mivoltukat; ezért is esett Budapest kevésbé módos kerületeire a választásunk, ahol számtalan olyan nő és fiatal lány él, aki érintett lehet a problémában."
     },
     "about": {
       "about-title": "Kik vagyunk mi?",
-      "about-p1": "Számunkra a HoldOn nem egy szalmaláng-éltű projekt, ami egy hirtelen egyetemista fellángolásból indul, hanem komoly alapokon nyugszik, melyet hosszas beszélgetés, eszme- és tapasztalatcsere előzött meg. A projekt megalapozásakor felkerestünk a szférában dolgozó szakembereket, dolgozókat is, s részükről is pozitív megerősítés érkezett, hogy az ötlet valóban hiánypótló. Célunk törődni a projekt hosszú távú, biztos finanszírozásával és anyagi támogatásával. Bármely társadalmi felelősségvállaláshoz kötődő projekt hatásmérése nehéz kérdés, ezzel tisztában vagyunk, ahogyan azzal is, hogy jelen projekt csupán egy csepp lehet a tengerben, nem pedig egy rendszerszintű megoldás. Tisztában vagyunk azzal, hogy a siker ebben az esetben nem feltétlenül látványos; de nyilvánvaló, hogy az igény folyamatos ezekre a termékekre, ahogyan lelkesedésünk és kitartásunk is az ügy iránt, melyre szeretnénk érzékenyen és hatékonyan reagálni.",
-      "about-p2": "Jelenleg egy tucat egyetemista önkéntes munkájából épül fel a projekt. Egyes tagok a pályázatok írásával és a projekt finanszírozásával, mások az automata technikai vetületével, mechanikai aspektusával, szintén más projekttagok pedig a marketinggel és a külső megjelenéssel, közösségi médiával foglalkoznak, mások pedig a stratégiával, szakemberek, támogatók felkeresésén dolgoznak. Jelenleg tehát sok háttérmunka zajlik, amelyek a projekt gerincét adják. A későbbiekben szeretnénk a helyszínen dolgozókat is bevonni, vagy más egyetemistákkal összefogni a projekt anyagi hátterének biztosításának érdekében: pl. pályázatírás, adománygyűjtés."
+      "about-p1": "Számunkra a HoldOn nem egy szalmaláng-életű projekt, ami egyetemisták hirtelen fellángolásából indult, hanem komoly elhatározáson nyugszik, melyet hosszas beszélgetés, eszme- és tapasztalatcsere előzött meg. A projekt megalapozásakor felkerestünk a szférában dolgozó szakembereket, s ők is megerősítették, hogy az ötlet valóban hiánypótló. Célunk törődni a projekt hosszú távú, biztos fenntarthatóságával, mind anyagi, mind személyes erőforrások tekintetében. Nehéz kérdés meghatározni a projekt hatásosságát, ezzel tisztában vagyunk, ahogyan azzal is, hogy jelen erőfeszítéseink csupán cseppek lehetnek a tengerben, nem pedig rendszerszintű megoldás. Tisztában vagyunk azzal, hogy a siker ebben az esetben nem feltétlenül látványos; de nyilvánvaló, hogy az igény folyamatos ezekre a termékekre, ahogyan lelkesedésünk és kitartásunk is az ügy iránt, melyre szeretnénk érzékenyen és hatékonyan reagálni.",
+      "about-p2": "Jelenleg egy tucat egyetemista önkéntes munkájából épül fel a projekt. Egyes tagok a pályázatok írásával és a projekt finanszírozásával, mások az automata technikai vetületével, a marketinggel és a külső megjelenéssel, közösségi médiával foglalkoznak, mások pedig a stratégiával, szakemberek, támogatók felkeresésén dolgoznak. A későbbiekben szeretnénk az automatáink helyszínein dolgozókat is bevonni, vagy más egyetemistákkal összefogni a projekt anyagi háttere biztosításának érdekében: pl. pályázatírás, adománygyűjtés."
     },
     "donate": {
       "donate-title": "Hogyan tudod támogatni a rászorulókat?",
-      "donate-p1": "Mindenekelőtt olyan <strong>rendszeres támogatásra van szükségünk</strong>, amelyből az automata betétekkel történő feltöltését finanszírozni tudjuk, ennek érdekében hálával fogadunk akár higiéniai termékeket, akár rendszeres anyagi támogatást.",
-      "donate-p2": "Jelenleg elsősorban <strong>vállalati partnereket keresünk</strong>, akikkel hosszútávú és rendszeres együttműködés alakítható ki. Tapasztalatunk szerint a támogatók megszólításához elengedhetetlenek a személyes kapcsolatok, így arra kérünk, hogy amennyiben van olyan ismerősöd, aki betéteket gyártó vagy betétek forgalmazásával foglalkozó cégnél dolgozik, esetleg olyan helyen, akiknek a CSR-jába passzolhat a projektünk, jelezd nekünk a <strong>holdon@holdonprojekt.hu</strong> email címen.",
-      "donate-p3": "<strong>Egyéni anyagi támogatásra</strong> is van lehetőség a jobb oldalon található bankszámlára történő utalással. Kérjük, közleményben mindig tüntesd fel, hogy adományt küldesz. Minden támogatást hálásan köszönünk!",
+      "donate-p1": "Mindenekelőtt olyan <strong>rendszeres támogatásra van szükségünk</strong>, amelyből az automaták betétekkel történő feltöltését finanszírozni tudjuk, ennek érdekében hálával fogadunk akár higiéniai termékeket, akár rendszeres anyagi támogatást.",
+      "donate-p2": "Jelenleg elsősorban <strong>vállalati partnereket keresünk</strong>, akikkel hosszútávú és rendszeres együttműködés alakítható ki. Tapasztalatunk szerint a támogatók megszólításához elengedhetetlenek a személyes kapcsolatok, így arra kérünk, hogy amennyiben van olyan ismerősöd, aki betéteket gyártó vagy betétek forgalmazásával foglalkozó cégnél dolgozik, esetleg olyan helyen, akiknek a CSR-jába passzolhat a projektünk, <a href='mailto:holdon@holdonprojekt.hu'>vedd fel velünk a kapcsolatot</a>.",
+      "donate-p3": "<strong>Egyéni anyagi támogatásra</strong> is van lehetőség a jobb oldalon található bankszámlára történő utalással. Kérjük, közleményben <strong>mindig tüntesd fel, hogy adományt küldesz</strong>. Minden támogatást hálásan köszönünk!",
       "donate-details": [
         {
           "label": "Kedvezményezett",
@@ -50,7 +50,7 @@
         },
         {
           "label": "Külföldről érkező átutalás",
-          "value": "IBAN: HU74116000060000000201591369, BIC: GIBAHUHBXXX, Erste Bank Hungary Zrt. NEPFURDO U. 24-26, Budapest, Hungary"
+          "value": "IBAN : HU74116000060000000201591369, BIC : GIBAHUHBXXX, Erste Bank Hungary Zrt. NEPFURDO U. 24-26, Budapest, Hungary"
         },
         {
           "label": "Közlemény",
@@ -61,7 +61,58 @@
       "donate-copied-label": "Másolva"
     },
     "press": {
-      "press-title": "Sajtó"
+      "press-title": "Sajtó",
+      "press-items": [
+        {
+          "date": "2025. május 22.",
+          "title": "Küzdjünk együtt a menstruációs szegénység ellen!",
+          "href": "https://www.noklapja.hu/aktualis/2025/05/22/menstruacios-szegenyseg/",
+          "excerpt": "2025 júniusában két új betétautomata kihelyezésében támogatja a dm a HoldOn Egyesületet, hogy a szervezet bővíteni tudja segítő tevékenységét, amellyel hátrányos helyzetű nőket és lányokat érnek el.",
+          "sourceLabel": "Nők Lapja"
+        },
+        {
+          "date": "2024. december 13.",
+          "title": "\"Az űrbe eljutottunk, de a női mosdókban még mindig nincs ingyen elérhető betét\" - a HoldOn Egyesület munkájáról",
+          "href": "https://kepmas.hu/hu/ingyen-elerheto-tisztasagi-betet-automata-holdon-egyesulet-menstruacios-szegenyseg",
+          "excerpt": "Tej, kenyér, egészségügyi betét. Annál, aki ezt a cikket olvassa, jó eséllyel fel sem vetődik, hogy a menstruációs higiéniai eszközök kimaradhatnak a bevásárlólistájáról, pedig a mai Magyarországon ez minden ötödik nőnek nem jelent evidenciát.",
+          "sourceLabel": "Képmás Magazin"
+        },
+        {
+          "date": "2024. október 01.",
+          "title": "Újabb két automatát helyeztünk üzembe a Holland Nagykövetség támogatásával",
+          "href": "https://www.facebook.com/share/p/QGQ6TinaCzynkf6s/",
+          "excerpt": "Büszkeséggel jelenthetjük be a HoldOn projekt által kivitelezett és a Holland Emberi Jogi Alap által finanszírozott két betétautomata sikeres üzembe helyezését.",
+          "sourceLabel": "Embassy of the Netherlands in Hungary - Facebook"
+        },
+        {
+          "date": "2023. november 23.",
+          "title": "HoldOn Téradó a józsefvárosi FiDo Ifjúsági Központban",
+          "href": "https://www.facebook.com/fidosz.parkosz/posts/pfbid02B7Pa9KQjzoBrR8mdxcySqwLe4hkeYH7LjfJZuVvqtbWBM7e8RdrPU3Ep1LP7zzj7l",
+          "excerpt": "Nem azért zártunk be ma, mert nyaralni mentünk, hanem mert ez a nagyszerű rendezvény, előadás zajlott nálunk este öt órától. Szerencsére sokan érdeklődtek.",
+          "sourceLabel": "FiDo - Facebook"
+        },
+        {
+          "date": "2022. december 16.",
+          "title": "Különleges módon támogatnak rászoruló nőket a jezsuita szakkollégisták Józsefvárosban",
+          "href": "https://www.magyarkurir.hu/hazai/raszorulo-noket-tamogatnak-jezsuita-szakkollegistak-jozsefvarosban",
+          "excerpt": "A Szent Ignác Jezsuita Szakkollégium diákjai 2021-ben indították el kezdeményezésüket HoldOn néven a menstruációs szegénység felszámolásáért.",
+          "sourceLabel": "Magyar Kurír"
+        },
+        {
+          "date": "2022. december 1.",
+          "title": "\"Amit eggyel a legkisebbek közül tesztek, velem teszitek\"",
+          "href": "https://www.szentignac.hu/cimlap/halad-a-holdon/",
+          "excerpt": "A menstruációs szegénység Magyarországon minden ötödik nőt érint, ugyanakkor a személyi higiénia, a felvilágosítás sok családban tabutéma.",
+          "sourceLabel": "Szent Ignác Jezsuita Szakkollégium"
+        },
+        {
+          "date": "2022. június 1.",
+          "title": "Menstruációs szegénység és a HoldOn projekt",
+          "href": "https://tudomanyon.hu/menstruacios-szegenyseg-es-a-holdon-projekt/",
+          "excerpt": "Senkit ne tévesszen meg a cím - könnyű a Hold miatt egyből a probléma távoliságára asszociálni, ám itt épp ennek ellenkezőjéről van szó!",
+          "sourceLabel": "TudományOn"
+        }
+      ]
     },
     "legal": {
       "intro": "A HoldOn projekt hivatalos irányelvei és szabályzatai.",

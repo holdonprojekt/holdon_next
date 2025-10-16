@@ -5,9 +5,9 @@ import { Hero } from "./components/Hero";
 import { SiteHeader } from "./components/SiteHeader";
 import { Section } from "./components/Section";
 import { SiteFooter } from "./components/SiteFooter";
-import { RichText } from "@/components/RichText";
+import { RichText } from "@/app/components/RichText";
 import { defaultLocale, getDictionary, locales, type Locale } from "@/lib/i18n";
-import { PressList } from "./components/PressList";
+import { PressList, type PressItem } from "./components/PressList";
 import { CopyField } from "./components/CopyField";
 import { EmbedSocialFeed } from "./components/EmbedSocialFeed";
 
@@ -112,6 +112,7 @@ export default async function HoldOnPage({ params }: PageProps) {
   const navigation = dictionary.navigation;
   const footer = dictionary.footer;
   const content = dictionary.content;
+  const pressItems = Array.isArray(content.press?.["press-items"]) ? (content.press?.["press-items"] as PressItem[]) : [];
   const currentYear = new Date().getFullYear();
   const donateDetails = (content.donate["donate-details"] ?? []) as Array<{
     label: string;
@@ -233,7 +234,7 @@ export default async function HoldOnPage({ params }: PageProps) {
           title={content.press["press-title"]}
           backgroundColor={pressBackground}
         >
-          <PressList />
+          <PressList items={pressItems} />
         </Section>
       </main>
       <SiteFooter
