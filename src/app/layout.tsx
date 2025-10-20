@@ -59,7 +59,7 @@ export default async function RootLayout({
           id="stats"
           src="/stats.js"
           data-website-id="2887fd25-5181-4a35-971e-effc7bbb8b37"
-          data-host-url="/stats/api"
+          data-host-url="/stats"
           strategy="afterInteractive"
           defer
         />
