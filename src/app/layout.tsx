@@ -56,7 +56,7 @@ export default async function RootLayout({
     <html lang={locale} suppressHydrationWarning>
       <body className={`${arbutus.variable} ${sourceSans.variable} ${cookie.variable} antialiased`}>
         <Script
-          id="umami-analytics"
+          id="stats"
           src="/stats.js"
           data-website-id="2887fd25-5181-4a35-971e-effc7bbb8b37"
           data-host-url="/stats/api"

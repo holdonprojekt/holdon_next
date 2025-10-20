@@ -30,6 +30,7 @@ export function CopyField({ label, value, copyLabel = "Copy", copiedLabel = "Cop
         <button
           type="button"
           onClick={handleCopy}
+          data-umami-event="copy-donation-details-button"
           className="flex items-center gap-2 rounded-full border border-black/10 bg-white px-3 py-1 text-sm font-sans uppercase tracking-wide text-black transition-colors hover:border-black/30 hover:bg-white/90"
           aria-label={`${copied ? copiedLabel : copyLabel} ${label}`}
         >

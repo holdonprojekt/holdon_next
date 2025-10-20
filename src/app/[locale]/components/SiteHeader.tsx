@@ -70,6 +70,7 @@ export function SiteHeader({ menuItems, languageOptions, title }: SiteHeaderProp
         aria-expanded={isOpen}
         aria-label="Open navigation"
         onClick={() => setIsOpen(true)}
+        data-umami-event="open-navigation-header-button"
         className={`fixed right-4 top-6 z-40 flex items-center gap-3 rounded-full bg-white/90 px-5 py-3 backdrop-blur transition-all duration-200 hover:bg-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-shakespeare md:right-12 ${
           isOpen ? "pointer-events-none -translate-y-2 opacity-0" : "pointer-events-auto"
         }`}
@@ -121,6 +122,7 @@ export function SiteHeader({ menuItems, languageOptions, title }: SiteHeaderProp
                 key={item.href}
                 href={item.href}
                 onClick={() => setIsOpen(false)}
+                data-umami-event={`header-menu-link`}
                 className="transition-colors hover:text-black/60"
               >
                 {item.label}
@@ -133,6 +135,7 @@ export function SiteHeader({ menuItems, languageOptions, title }: SiteHeaderProp
               aria-label="Close navigation"
               className="relative ml-auto flex h-12 w-12 items-center justify-center rounded-full border border-black/10 bg-white text-black transition hover:border-black/20 hover:bg-white/90 hover:text-black md:ml-0"
               onClick={() => setIsOpen(false)}
+              data-umami-event="close-navigation-header-button"
             >
               <span className="absolute block h-6 w-6 rotate-45">
                 <span className="absolute inset-x-0 top-1/2 h-0.5 -translate-y-1/2 rounded bg-current" />
@@ -147,6 +150,7 @@ export function SiteHeader({ menuItems, languageOptions, title }: SiteHeaderProp
                   scroll={false}
                   hrefLang={option.label}
                   onClick={() => setIsOpen(false)}
+                  data-umami-event={`header-language-${option.label}-link`}
                   className={
                     option.isActive
                       ? "rounded-full border border-black px-4 py-1 font-medium text-black"

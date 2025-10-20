@@ -64,6 +64,7 @@ export function SiteFooter({
               <a
                 key={item.href}
                 href={item.href}
+                data-umami-event="footer-menu-link"
                 className="transition-all duration-200 hover:underline hover:underline-offset-4"
               >
                 {item.label}
@@ -80,6 +81,7 @@ export function SiteFooter({
                   key={item.href}
                   href={item.href}
                   hrefLang={item.href.split("/")[1] ?? undefined}
+                  data-umami-event="footer-legal-menu-link"
                   className="transition-all duration-200 hover:underline hover:underline-offset-4"
                 >
                   {item.label}
@@ -104,6 +106,7 @@ export function SiteFooter({
                     href={link.href}
                     target={isExternal ? "_blank" : undefined}
                     rel={isExternal ? "noreferrer" : undefined}
+                    data-umami-event={`footer-social-${link.id}-link`}
                     className="font-sans text-sm uppercase tracking-wide font-light transition-all duration-200 hover:underline hover:underline-offset-3 whitespace-nowrap"
                   >
                     {link.label}
@@ -119,6 +122,7 @@ export function SiteFooter({
                 href={option.href}
                 scroll={false}
                 hrefLang={option.label}
+                data-umami-event={`footer-language-${option.label}-link`}
                 className={
                   option.isActive
                     ? "rounded-full border border-black px-3 py-1 font-medium text-black"

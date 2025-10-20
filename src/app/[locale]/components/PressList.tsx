@@ -26,6 +26,7 @@ export function PressList({ items }: PressListProps) {
                 href={item.href}
                 target="_blank"
                 rel="noreferrer"
+                data-umami-event="press-article-link"
                 className="font-light transition-colors hover:text-black"
               >
                 {item.title}
@@ -43,6 +44,7 @@ export function PressList({ items }: PressListProps) {
               href={item.href}
               target="_blank"
               rel="noreferrer"
+              data-umami-event="press-source-link"
               className="text-shakespeare transition-colors hover:text-black"
             >
               {item.sourceLabel}

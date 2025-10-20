@@ -44,6 +44,7 @@ export function Hero({ title, scrollTarget, scrollLabel }: HeroProps) {
       </div>
       <a
         href={scrollTarget}
+        data-umami-event="scroll-down-indicator"
         className="absolute bottom-4 left-1/2 -translate-x-1/2 text-black transition-colors hover:text-black/75"
       >
         <span className="sr-only">{scrollLabel}</span>
