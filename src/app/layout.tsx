@@ -7,20 +7,20 @@ import { defaultLocale, locales, type Locale } from "@/lib/i18n";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://holdonprojekt.hu"),
-  title: "HoldOn projekt",
-  description: "HoldOn projekt a menstruációs szegénységben élőkért.",
+  title: "HoldOn Projekt",
+  description: "HoldOn Projekt a menstruációs szegénységben élőkért.",
   keywords: [
     "HoldOn",
-    "HoldOn projekt",
+    "HoldOn Projekt",
     "menstruációs szegénység",
     "adományozás",
   ],
   authors: [{ name: "Tamas Csertan" }],
   robots: "index, follow",
   openGraph: {
-    title: "HoldOn projekt",
-    description: "HoldOn projekt a menstruációs szegénységben élőkért.",
-    siteName: "HoldOn projekt",
+    title: "HoldOn Projekt",
+    description: "HoldOn Projekt a menstruációs szegénységben élőkért.",
+    siteName: "HoldOn Projekt",
     url: "https://holdonprojekt.hu",
     type: "website",
   },
@@ -57,8 +57,9 @@ export default async function RootLayout({
       <body className={`${arbutus.variable} ${sourceSans.variable} ${cookie.variable} antialiased`}>
         <Script
           id="umami-analytics"
-          src="https://cloud.umami.is/script.js"
+          src="/stats.js"
           data-website-id="2887fd25-5181-4a35-971e-effc7bbb8b37"
+          data-host-url="/stats/api"
           strategy="afterInteractive"
           defer
         />
