@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import "./globals.css";
 import { ContextMenuBlocker } from "./components/ContextMenuBlocker";
 import { arbutus, cookie, sourceSans } from "./fonts";
@@ -54,6 +55,13 @@ export default async function RootLayout({
   return (
     <html lang={locale} suppressHydrationWarning>
       <body className={`${arbutus.variable} ${sourceSans.variable} ${cookie.variable} antialiased`}>
+        <Script
+          id="umami-analytics"
+          src="https://cloud.umami.is/script.js"
+          data-website-id="2887fd25-5181-4a35-971e-effc7bbb8b37"
+          strategy="afterInteractive"
+          defer
+        />
         <ContextMenuBlocker>{children}</ContextMenuBlocker>
       </body>
     </html>
