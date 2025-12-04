@@ -23,4 +23,4 @@ export async function getDictionary(locale: Locale): Promise<Dictionary> {
   return loadDictionary(locale);
 }
 export { locales, defaultLocale };
-export type { Locale, Dictionary };
+export type { Locale };

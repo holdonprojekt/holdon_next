@@ -1,6 +1,6 @@
 import type { ReactNode } from "react";
 
-export type SectionProps = {
+type SectionProps = {
   id: string;
   title: string;
   backgroundColor: string;

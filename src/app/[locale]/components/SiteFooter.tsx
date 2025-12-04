@@ -140,7 +140,7 @@ export function SiteFooter({
         </div>
         <div className="flex w-full max-w-sm flex-col items-start gap-4 text-start font-sans text-sm text-gray-600 lg:items-end lg:text-end">
           <RichText html={footerLabels.credits} className="font-light" />
-          <RichText html={footerLabels.webDesign} className="font-light transition-colors hover:text-black" />
+          <RichText html={footerLabels.webDesign} data-umami-event="footer-web-developer-link" className="font-light transition-colors hover:text-black" />
           <div className="flex flex-wrap justify-center gap-1 lg:justify-end">
             <span>©2021-{currentYear}</span>
             <RichText html={footerLabels.legal} className="inline font-light" as="span" />
