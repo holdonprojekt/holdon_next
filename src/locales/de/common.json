@@ -4,52 +4,52 @@
   },
   "navigation": {
     "nav-link-project": "Projekt",
-    "nav-link-about": "\u00dcber uns",
+    "nav-link-about": "Über uns",
     "nav-link-donate": "Spenden",
     "nav-link-insta": "Bildung",
     "nav-link-press": "Presse"
   },
   "footer": {
     "footer-link-project": "Projekt",
-    "footer-link-about": "\u00dcber uns",
+    "footer-link-about": "Über uns",
     "footer-link-donate": "Spenden",
     "footer-link-insta": "Bildung",
     "footer-link-press": "Presse",
-    "footer-link-terms": "Allgemeine Gesch\u00e4ftsbedingungen",
-    "footer-link-privacy": "Datenschutzerkl\u00e4rung",
-    "footer-info": "HoldOn Egyes\u00fclet, Reg.-Nr.: 01-02-0018388, Steuernr.: 19401021-1-43, Adresse: 1113 Budapest, Vill\u00e1nyi \u00fat 72. I/1.",
+    "footer-link-terms": "Allgemeine Geschäftsbedingungen",
+    "footer-link-privacy": "Datenschutzerklärung",
+    "footer-info": "HoldOn Egyesület, Reg.-Nr.: 01-02-0018388, Steuernr.: 19401021-1-43, Adresse: 1113 Budapest, Villányi út 72. I/1.",
     "credits": "Einige Icons sind frei verwendbare Werke von Freepik oder Google.",
-    "web-design": "<a href='https://csertant.hu'>Mit &#10084; gestaltet von csertant</a>.",
-    "legal": "HoldOn Egyes\u00fclet. Alle Rechte vorbehalten."
+    "web-design": "<a href='https://csertant.hu'>Mit &#10084; gestaltet von tamas.csertan</a>.",
+    "legal": "HoldOn Egyesület. Alle Rechte vorbehalten."
   },
   "content": {
     "project": {
       "project-title": "Das Projekt",
-      "project-p1": "Wir m\u00f6chten Frauen helfen, sich in Gemeinschaften und im Alltag nicht ausgeschlossen zu f\u00fchlen \u2013 wof\u00fcr angemessene Hygiene unverzichtbar ist. Als ersten Schritt unterst\u00fctzen wir Frauen in unserem Umfeld mit grundlegenden Hygieneprodukten wie Binden.",
-      "project-p2": "Aufgrund der Sensibilit\u00e4t des Themas suchten wir nach einer L\u00f6sung, die Hilfe ohne Aufdringlichkeit erm\u00f6glicht und so Schamgef\u00fchle mindert. Wir wollen eine sichere Basis schaffen, wo jederzeit die n\u00f6tigen Produkte zug\u00e4nglich sind. Im Herbst 2022 stellten wir unseren ersten Automaten im 8. Budapester Bezirk im Familienunterst\u00fctzungszentrum J\u00f3zsefv\u00e1ros auf, der kostenlose Binden ausgibt. <strong>Weniger als ein Jahr sp\u00e4ter \u00fcbernahm die Bezirksverwaltung die Bef\u00fcllung und k\u00fcndigte weitere Automaten an. Auch HoldOn erweiterte sein Netz: Zwei Automaten wurden in Obdachlosenunterk\u00fcnften installiert, um besonders Bed\u00fcrftige zu erreichen; im Fr\u00fchjahr 2025 kamen dank Spenden der dm drogerie markt Kft. zwei weitere Automaten in Csepel und Ferencv\u00e1ros hinzu. Mit unserer aktuellen Kapazit\u00e4t k\u00f6nnen wir monatlich nahezu 300 Frauen verlässlich versorgen.</strong>",
-      "project-p3": "Studien zufolge betrifft Periodenarmut etwa jede f\u00fcnfte Frau \u2013 die Dunkelziffer ist vermutlich h\u00f6her, da das Thema weiterhin tabuisiert wird. Mit diesem Projekt wollen wir <strong>dem Thema Periodenarmut mehr Geh\u00f6r verschaffen</strong> und eine Plattform f\u00fcr aufkl\u00e4rende Beitr\u00e4ge in sozialen Medien schaffen, damit das Ph\u00e4nomen m\u00f6glichst viele Menschen erreicht. Die W\u00fcrde des anderen zu sch\u00fctzen, ist unsere gemeinsame Verantwortung. Wir konzentrieren unsere Arbeit auf weniger wohlhabende Budapester Bezirke, in denen viele Frauen und M\u00e4dchen betroffen sind."
+      "project-p1": "Wir möchten Frauen helfen, sich in Gemeinschaften und im Alltag nicht ausgeschlossen zu fühlen – wofür angemessene Hygiene unverzichtbar ist. Als ersten Schritt unterstützen wir Frauen in unserem Umfeld mit grundlegenden Hygieneprodukten wie Binden.",
+      "project-p2": "Aufgrund der Sensibilität des Themas suchten wir nach einer Lösung, die Hilfe ohne Aufdringlichkeit ermöglicht und so Schamgefühle mindert. Wir wollen eine sichere Basis schaffen, wo jederzeit die nötigen Produkte zugänglich sind. Im Herbst 2022 stellten wir unseren ersten Automaten im 8. Budapester Bezirk im Familienunterstützungszentrum Józsefváros auf, der kostenlose Binden ausgibt. <strong>Weniger als ein Jahr später übernahm die Bezirksverwaltung die Befülllung und kündigte weitere Automaten an. Auch HoldOn erweiterte sein Netz: Zwei Automaten wurden in Obdachlosenunterkünften installiert, um besonders Bedürftige zu erreichen; im Frühjahr 2025 kamen dank Spenden der dm drogerie markt Kft. zwei weitere Automaten in Csepel und Ferencváros hinzu. Mit unserer aktuellen Kapazität können wir monatlich nahezu 300 Frauen verlässlich versorgen.</strong>",
+      "project-p3": "Studien zufolge betrifft Periodenarmut etwa jede fünfte Frau – die Dunkelziffer ist vermutlich höher, da das Thema weiterhin tabuisiert wird. Mit diesem Projekt wollen wir <strong>dem Thema Periodenarmut mehr Gehör verschaffen</strong> und eine Plattform für aufklärende Beiträge in sozialen Medien schaffen, damit das Phänomen möglichst viele Menschen erreicht. Die Würde des anderen zu schützen, ist unsere gemeinsame Verantwortung. Wir konzentrieren unsere Arbeit auf weniger wohlhabende Budapester Bezirke, in denen viele Frauen und Mädchen betroffen sind."
     },
     "about": {
-      "about-title": "\u00dcber uns",
-      "about-p1": "F\u00fcr uns ist HoldOn kein kurzlebiges Projekt aus spontaner studentischer Begeisterung; es beruht auf einer festen Entschlossenheit, geformt durch ausf\u00fchrliche Gespr\u00e4che sowie den Austausch von Ideen und Erfahrungen. Bei der Konzeption zogen wir Fachleute hinzu, die best\u00e4tigten, dass unsere Idee eine echte L\u00fccke schlie\u00dft. Unser Ziel ist die langfristige, stabile Tragf\u00e4higkeit des Projekts \u2013 finanziell und personell. Wirkungsmessung ist schwierig, und wir wissen, dass unsere Anstrengungen eher Tropfen auf den hei\u00dfen Stein als eine systemische L\u00f6sung sind. Gleichzeitig ist der Bedarf offensichtlich dauerhaft \u2013 ebenso unsere Motivation und Ausdauer, worauf wir sensibel und wirkungsvoll reagieren wollen.",
-      "about-p2": "Heute tr\u00e4gt die ehrenamtliche Arbeit von rund einem Dutzend Studierenden das Projekt. Einige schreiben F\u00f6rderantr\u00e4ge und betreuen die Finanzen, andere k\u00fcmmern sich um technische Aspekte der Automaten; weitere verantworten Marketing, \u00d6ffentlichkeitsarbeit und Social Media; wieder andere arbeiten an Strategie, an der Ansprache von Expertinnen und Experten sowie der Gewinnung von Unterst\u00fctzenden. K\u00fcnftig wollen wir auch Menschen an den Automatenstandorten st\u00e4rker einbinden und breiter kooperieren, um die finanzielle Basis zu sichern \u2013 etwa \u00fcber F\u00f6rdermittel und Fundraising."
+      "about-title": "Über uns",
+      "about-p1": "Für uns ist HoldOn kein kurzlebiges Projekt aus spontaner studentischer Begeisterung; es beruht auf einer festen Entschlossenheit, geformt durch ausführliche Gespräche sowie den Austausch von Ideen und Erfahrungen. Bei der Konzeption zogen wir Fachleute hinzu, die bestätigten, dass unsere Idee eine echte Lücke schließt. Unser Ziel ist die langfristige, stabile Tragfähigkeit des Projekts – finanziell und personell. Wirkungsmessung ist schwierig, und wir wissen, dass unsere Anstrengungen eher Tropfen auf den heißen Stein als eine systemische Lösung sind. Gleichzeitig ist der Bedarf offensichtlich dauerhaft – ebenso unsere Motivation und Ausdauer, worauf wir sensibel und wirkungsvoll reagieren wollen.",
+      "about-p2": "Heute trägt die ehrenamtliche Arbeit von rund einem Dutzend Studierenden das Projekt. Einige schreiben Förderanträge und betreuen die Finanzen, andere kümmern sich um technische Aspekte der Automaten; weitere verantworten Marketing, Öffentlichkeitsarbeit und Social Media; wieder andere arbeiten an Strategie, an der Ansprache von Expertinnen und Experten sowie der Gewinnung von Unterstützenden. Künftig wollen wir auch Menschen an den Automatenstandorten stärker einbinden und breiter kooperieren, um die finanzielle Basis zu sichern – etwa über Fördermittel und Fundraising."
     },
     "donate": {
       "donate-title": "Wie kannst du helfen?",
-      "donate-p1": "Zuerst ben\u00f6tigen wir <strong>regel\u00e4\u00dfige Unterst\u00fctzung</strong>, um die laufende Bef\u00fcllung unserer Automaten mit Binden zu finanzieren. Wir freuen uns sowohl \u00fcber Hygieneartikel als auch \u00fcber regelm\u00e4\u00dfige finanzielle Beitr\u00e4ge.",
-      "donate-p2": "Wir suchen derzeit <strong>Unternehmenspartner</strong> f\u00fcr eine langfristige, regelm\u00e4\u00dfige Zusammenarbeit. Pers\u00f6nliche Verbindungen sind aus unserer Sicht entscheidend f\u00fcr die Ansprache. Wenn du jemanden kennst, der bei einem Hersteller oder Vertreiber von Binden arbeitet oder dessen CSR zu unserem Projekt passt, <a href='mailto:holdon@holdonprojekt.hu'>nimm gern Kontakt zu uns auf</a>.",
-      "donate-p3": "<strong>Individuelle finanzielle Unterst\u00fctzung</strong> ist ebenfalls m\u00f6glich: Bitte \u00fcberweise auf das rechts genannte Konto und gib im Verwendungszweck <strong>immer \"Spende\"</strong> an. F\u00fcr jede Hilfe sind wir sehr dankbar!",
+      "donate-p1": "Zuerst benötigen wir <strong>regelmäßige Unterstützung</strong>, um die laufende Befüllung unserer Automaten mit Binden zu finanzieren. Wir freuen uns sowohl über Hygieneartikel als auch über regelmäßige finanzielle Beiträge.",
+      "donate-p2": "Wir suchen derzeit <strong>Unternehmenspartner</strong> für eine langfristige, regelmäßige Zusammenarbeit. Persönliche Verbindungen sind aus unserer Sicht entscheidend für die Ansprache. Wenn du jemanden kennst, der bei einem Hersteller oder Vertreiber von Binden arbeitet oder dessen CSR zu unserem Projekt passt, <a href='mailto:holdon@holdonprojekt.hu'>nimm gern Kontakt zu uns auf</a>.",
+      "donate-p3": "<strong>Individuelle finanzielle Unterstützung</strong> ist ebenfalls möglich: Bitte überweise auf das rechts genannte Konto und gib im Verwendungszweck <strong>immer \"Spende\"</strong> an. Für jede Hilfe sind wir sehr dankbar!",
       "donate-details": [
         {
-          "label": "Beg\u00fcnstigte Organisation",
-          "value": "HoldOn Egyes\u00fclet"
+          "label": "Begünstigte Organisation",
+          "value": "HoldOn Egyesület"
         },
         {
-          "label": "Inlands\u00fcberweisung",
+          "label": "Inlandsüberweisung",
           "value": "11600006-00000002-01591369"
         },
         {
-          "label": "SEPA/SWIFT-\u00dcberweisung",
+          "label": "SEPA/SWIFT-Überweisung",
           "value": "IBAN: HU74116000060000000201591369, BIC: GIBAHUHBXXX, Erste Bank Hungary Zrt. NEPFURDO U. 24-26, Budapest, Hungary"
         },
         {
@@ -72,9 +72,9 @@
         },
         {
           "date": "13. Dezember 2024",
-          "title": "\"Wir fliegen ins All, aber kostenlose Binden fehlen noch immer\" – über die Arbeit von HoldOn",
+          "title": "\"Wir fliegen ins All, aber kostenlose Binden fehlen noch immer\" - über die Arbeit von HoldOn",
           "href": "https://kepmas.hu/hu/ingyen-elerheto-tisztasagi-betet-automata-holdon-egyesulet-menstruacios-szegenyseg",
-          "excerpt": "Milch, Brot, Monatsbinden. Für viele gehört das selbstverständlich auf die Einkaufsliste – in Ungarn ist das für jede fünfte Frau leider nicht der Fall.",
+          "excerpt": "Milch, Brot, Monatsbinden. Für viele gehört das selbstverständlich auf die Einkaufsliste - in Ungarn ist das für jede fünfte Frau leider nicht der Fall.",
           "sourceLabel": "Képmás Magazin"
         },
         {
@@ -82,14 +82,14 @@
           "title": "Zwei weitere Automaten dank Unterstützung der niederländischen Botschaft",
           "href": "https://www.facebook.com/share/p/QGQ6TinaCzynkf6s/",
           "excerpt": "Mit Stolz melden wir die Inbetriebnahme von zwei neuen Automaten, finanziert durch den Human Rights Fund der Niederlande.",
-          "sourceLabel": "Embassy of the Netherlands in Hungary – Facebook"
+          "sourceLabel": "Embassy of the Netherlands in Hungary - Facebook"
         },
         {
           "date": "23. November 2023",
           "title": "HoldOn-Gastspiel im FiDo Jugendzentrum in Józsefváros",
           "href": "https://www.facebook.com/fidosz.parkosz/posts/pfbid02B7Pa9KQjzoBrR8mdxcySqwLe4hkeYH7LjfJZuVvqtbWBM7e8RdrPU3Ep1LP7zzj7l",
           "excerpt": "Heute blieben die Türen nicht wegen Urlaub geschlossen, sondern weil wir ab 17 Uhr diese tolle Veranstaltung ausrichten durften. Zum Glück war das Interesse groß.",
-          "sourceLabel": "FiDo – Facebook"
+          "sourceLabel": "FiDo - Facebook"
         },
         {
           "date": "16. Dezember 2022",
@@ -109,7 +109,7 @@
           "date": "1. Juni 2022",
           "title": "Periodenarmut und das HoldOn-Projekt",
           "href": "https://tudomanyon.hu/menstruacios-szegenyseg-es-a-holdon-projekt/",
-          "excerpt": "Lasst euch vom Namen nicht täuschen – HoldOn zeigt, wie nahe das Thema Periodenarmut tatsächlich ist.",
+          "excerpt": "Lasst euch vom Namen nicht täuschen - HoldOn zeigt, wie nahe das Thema Periodenarmut tatsächlich ist.",
           "sourceLabel": "TudományOn"
         }
       ]

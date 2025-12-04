@@ -24,6 +24,11 @@ export const metadata: Metadata = {
     url: "https://holdonprojekt.hu",
     type: "website",
   },
+  twitter: {
+      card: "summary_large_image",
+      title: "HoldOn Projekt",
+      description: "HoldOn Projekt a menstruációs szegénységben élőkért.",
+    },
   icons: {
     icon: "favicon.ico",
   },

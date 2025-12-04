@@ -19,7 +19,7 @@
     "footer-link-privacy": "Privacy Policy",
     "footer-info": "HoldOn Egyesület, Reg. No.: 01-02-0018388, Tax No.: 19401021-1-43, Address: 1113 Budapest, Villányi út 72. I/1.",
     "credits": "Some icons are free-to-use works by Freepik or Google.",
-    "web-design": "<a href='https://csertant.hu'>Made with &#10084; by csertant</a>.",
+    "web-design": "<a href='https://csertant.hu'>Made with &#10084; by tamas.csertan</a>.",
     "legal": "HoldOn Egyesület. All rights reserved."
   },
   "content": {
@@ -27,18 +27,18 @@
       "project-title": "The project",
       "project-p1": "We want to help women feel included in their communities and everyday life, where proper hygiene is essential. As a first step, our goal is to support women in our proximity with basic hygiene products, such as sanitary pads.",
       "project-p2": "Given the sensitivity of the topic, we sought a solution that allows us to help without intrusion, easing the sense of shame for those affected. We want to create a safe base where they can access essential products at any time. In the fall of 2022, we installed our first vending machine in the 8th district of Budapest, inside the Józsefváros Family Support Center, providing free pads. <strong>Less than a year later, the local municipality took over supplying the machine and committed to installing more. HoldOn also expanded its network: we placed two machines in homeless shelters to reach those most in need, and in spring 2025—thanks to donations from dm drogerie markt Kft.—we installed two more machines in Csepel and Ferencváros. With our current capacity, we can consistently support nearly 300 women every month.</strong>",
-      "project-p3": "Studies indicate that period poverty affects roughly one in five women, though the true proportion is likely higher, as the topic remains taboo. With this project we aim to <strong>amplify the issue of period poverty</strong> and build a platform for educational posts on social media so the phenomenon reaches as many people as possible. We believe protecting each other's dignity is a shared responsibility. We focus our efforts on Budapest’s less affluent districts, where many women and girls are affected."
+      "project-p3": "Studies indicate that period poverty affects roughly one in five women, though the true proportion is likely higher, as the topic remains taboo. With this project we aim to <strong>amplify the issue of period poverty</strong> and build a platform for educational posts on social media so the phenomenon reaches as many people as possible. We believe protecting each other's dignity is a shared responsibility. We focus our efforts on Budapest's less affluent districts, where many women and girls are affected."
     },
     "about": {
       "about-title": "About us",
-      "about-p1": "For us, HoldOn isn’t a short‑lived project born out of a momentary student enthusiasm; it rests on a firm commitment shaped by long conversations and the exchange of ideas and experiences. When we laid the groundwork, we consulted professionals in the field who confirmed our idea fills a real gap. Our aim is to care for the project’s long‑term, stable sustainability—both financially and in terms of people. Measuring impact is difficult and we know our efforts are drops in the ocean rather than a systemic fix. Yet demand for these products is clearly continuous—so are our dedication and perseverance, to which we want to respond sensitively and effectively.",
-      "about-p2": "Today, the project runs on the voluntary work of about a dozen university students. Some write grants and manage finance, others handle the machines’ technical aspects; others focus on marketing, public presence, and social media; and some work on strategy, outreach to experts, and finding supporters. We also plan to involve people working at our machine locations. Looking ahead, we want to collaborate more broadly to secure the project’s financial background—for example through grant writing and fundraising."
+      "about-p1": "For us, HoldOn isn't a short-lived project born out of a momentary student enthusiasm; it rests on a firm commitment shaped by long conversations and the exchange of ideas and experiences. When we laid the groundwork, we consulted professionals in the field who confirmed our idea fills a real gap. Our aim is to care for the project's long-term, stable sustainability—both financially and in terms of people. Measuring impact is difficult and we know our efforts are drops in the ocean rather than a systemic fix. Yet demand for these products is clearly continuous—so are our dedication and perseverance, to which we want to respond sensitively and effectively.",
+      "about-p2": "Today, the project runs on the voluntary work of about a dozen university students. Some write grants and manage finance, others handle the machines' technical aspects; others focus on marketing, public presence, and social media; and some work on strategy, outreach to experts, and finding supporters. We also plan to involve people working at our machine locations. Looking ahead, we want to collaborate more broadly to secure the project's financial background—for example through grant writing and fundraising."
     },
     "donate": {
       "donate-title": "How can you help?",
       "donate-p1": "We primarily need <strong>regular support</strong> to finance the ongoing replenishment of pads in our vending machines. We gratefully accept hygiene products as well as regular financial contributions.",
-      "donate-p2": "We are currently looking for <strong>corporate partners</strong> for long‑term, regular collaboration. In our experience, personal connections are essential for outreach. If you know someone at a company that manufactures or distributes pads, or whose CSR might align with our project, please <a href='mailto:holdon@holdonprojekt.hu'>get in touch with us</a>.",
-      "donate-p3": "You can also provide <strong>individual financial support</strong> by transferring funds to the bank account on the right. Please <strong>always include \"Donation\" as the payment reference</strong>. We’re sincerely grateful for any support!",
+      "donate-p2": "We are currently looking for <strong>corporate partners</strong> for long-term, regular collaboration. In our experience, personal connections are essential for outreach. If you know someone at a company that manufactures or distributes pads, or whose CSR might align with our project, please <a href='mailto:holdon@holdonprojekt.hu'>get in touch with us</a>.",
+      "donate-p3": "You can also provide <strong>individual financial support</strong> by transferring funds to the bank account on the right. Please <strong>always include \"Donation\" as the payment reference</strong>. We're sincerely grateful for any support!",
       "donate-details": [
         {
           "label": "Beneficiary",
@@ -72,9 +72,9 @@
         },
         {
           "date": "13 December 2024",
-          "title": "\"We made it to space, yet restrooms still lack freely accessible pads\" — about HoldOn’s work",
+          "title": "\"We made it to space, yet restrooms still lack freely accessible pads\" — about HoldOn's work",
           "href": "https://kepmas.hu/hu/ingyen-elerheto-tisztasagi-betet-automata-holdon-egyesulet-menstruacios-szegenyseg",
-          "excerpt": "Milk, bread, sanitary pads. Many people never question whether period products belong on the shopping list, but in today’s Hungary every fifth woman cannot take them for granted.",
+          "excerpt": "Milk, bread, sanitary pads. Many people never question whether period products belong on the shopping list, but in today's Hungary every fifth woman cannot take them for granted.",
           "sourceLabel": "Képmás Magazin"
         },
         {
@@ -82,14 +82,14 @@
           "title": "Two more dispensers launched with support from the Dutch Embassy",
           "href": "https://www.facebook.com/share/p/QGQ6TinaCzynkf6s/",
           "excerpt": "We are proud to announce that two new pad dispensers, funded by the Netherlands Human Rights Fund, are now in operation thanks to the HoldOn project.",
-          "sourceLabel": "Embassy of the Netherlands in Hungary – Facebook"
+          "sourceLabel": "Embassy of the Netherlands in Hungary - Facebook"
         },
         {
           "date": "23 November 2023",
           "title": "HoldOn pop-up at the FiDo Youth Centre in Józsefváros",
           "href": "https://www.facebook.com/fidosz.parkosz/posts/pfbid02B7Pa9KQjzoBrR8mdxcySqwLe4hkeYH7LjfJZuVvqtbWBM7e8RdrPU3Ep1LP7zzj7l",
-          "excerpt": "We didn’t close today for a vacation but to host this great event and talk starting at 5 p.m. We were glad to see so much interest.",
-          "sourceLabel": "FiDo – Facebook"
+          "excerpt": "We didn't close today for a vacation but to host this great event and talk starting at 5 p.m. We were glad to see so much interest.",
+          "sourceLabel": "FiDo - Facebook"
         },
         {
           "date": "16 December 2022",
@@ -109,7 +109,7 @@
           "date": "1 June 2022",
           "title": "Period poverty and the HoldOn project",
           "href": "https://tudomanyon.hu/menstruacios-szegenyseg-es-a-holdon-projekt/",
-          "excerpt": "Don’t let the title fool you — the HoldOn project shines a light on how period poverty is anything but distant.",
+          "excerpt": "Don't let the title fool you — the HoldOn project shines a light on how period poverty is anything but distant.",
           "sourceLabel": "TudományOn"
         }
       ]

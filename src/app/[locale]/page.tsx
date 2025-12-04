@@ -6,7 +6,7 @@ import { SiteHeader } from "./components/SiteHeader";
 import { Section } from "./components/Section";
 import { SiteFooter } from "./components/SiteFooter";
 import { RichText } from "@/app/components/RichText";
-import { defaultLocale, getDictionary, locales, type Locale } from "@/lib/i18n";
+import { getDictionary, locales, type Locale } from "@/lib/i18n";
 import { PressList, type PressItem } from "./components/PressList";
 import { CopyField } from "./components/CopyField";
 import { EmbedSocialFeed } from "./components/EmbedSocialFeed";
@@ -17,10 +17,6 @@ const donateBackground = "rgba(241, 236, 207, 0.9)";
 const instaBackground = "rgba(247, 244, 224, 0.88)";
 const pressBackground = "rgba(251, 249, 237, 0.95)";
 
-export async function generateStaticParams() {
-  return locales.map((locale) => ({ locale }));
-}
-
 type PageParams = {
   locale: string;
 };
@@ -28,76 +24,6 @@ type PageParams = {
 type PageProps = {
   params: Promise<PageParams>;
 };
-
-export const dynamicParams = false;
-
-const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://holdonprojekt.hu";
-
-const stripHtml = (value: string) => value.replace(/<[^>]*>/g, " ").replace(/\s+/g, " ").trim();
-
-const baseKeywords = ["HoldOn", "HoldOn projekt", "menstruációs szegénység", "adományozás"];
-
-const normalizeUrl = (url: string) => url.replace(/\/$/, "");
-
-export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
-  const { locale: localeParam } = await params;
-
-  if (!locales.includes(localeParam as Locale)) {
-    return {};
-  }
-
-  const locale = localeParam as Locale;
-  const dictionary = await getDictionary(locale);
-  const siteName = "HoldOn projekt";
-  const head = dictionary.head as Record<string, unknown>;
-  const localizedTitle = typeof head["page-title"] === "string"
-    ? (head["page-title"] as string)
-    : siteName;
-  const fullTitle = `${localizedTitle} | ${siteName}`;
-  const projectIntroHtml = dictionary.content?.project?.["project-p1"] ?? "";
-  const headDescription = head["page-description"];
-  const localizedDescription = typeof headDescription === "string" ? headDescription : undefined;
-  const description = localizedDescription && localizedDescription.trim().length > 0
-    ? localizedDescription
-    : stripHtml(projectIntroHtml) || "HoldOn projekt a menstruációs szegénységben élőkért.";
-
-  const keywordOverride = head["page-keywords"];
-  const keywords = Array.isArray(keywordOverride)
-    ? keywordOverride.filter((value): value is string => typeof value === "string" && value.trim().length > 0)
-    : baseKeywords;
-
-  const normalizedBase = normalizeUrl(BASE_URL);
-  const localePath = locale === defaultLocale ? "" : `/${locale}`;
-  const canonicalPath = locale === defaultLocale ? "/" : `/${locale}`;
-  const canonicalUrl = `${normalizedBase}${localePath}` || normalizedBase;
-  const languages = Object.fromEntries(
-    locales.map((lang) => [lang, lang === defaultLocale ? "/" : `/${lang}`])
-  );
-
-  return {
-    title: fullTitle,
-    description,
-    keywords,
-    alternates: {
-      canonical: canonicalPath,
-      languages,
-    },
-    openGraph: {
-      type: "website",
-      title: fullTitle,
-      description,
-      url: canonicalUrl,
-      siteName: siteName,
-      locale,
-      alternateLocale: locales.filter((lang) => lang !== locale),
-    },
-    twitter: {
-      card: "summary_large_image",
-      title: fullTitle,
-      description,
-    },
-  };
-}
 
 export default async function HoldOnPage({ params }: PageProps) {
   const { locale: localeParam } = await params;
