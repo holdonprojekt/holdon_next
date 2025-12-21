@@ -23,17 +23,25 @@ export const metadata: Metadata = {
     siteName: "HoldOn Projekt",
     url: "https://holdonprojekt.hu",
     type: "website",
+    images: [
+      {
+        url: "/assets/logo.webp",
+        width: 1200,
+        height: 630,
+        alt: "HoldOn Projekt",
+      },
+    ],
   },
   twitter: {
       card: "summary_large_image",
       title: "HoldOn Projekt",
       description: "HoldOn Projekt a menstruációs szegénységben élőkért.",
+      images: ["/assets/logo.webp"],
     },
   icons: {
     icon: "favicon.ico",
-  },
-  other: {
-    "revised": "14/10/2025",
+    shortcut: "/assets/logo.webp",
+    apple: "/assets/logo.webp",
   },
 };
 
