@@ -23,25 +23,25 @@ const socialLinks = [
     id: "mail",
     href: "mailto:holdon@holdonprojekt.hu",
     label: "holdon@holdonprojekt.hu",
-  icon: "/assets/mail.webp",
+    icon: "/assets/mail.webp",
   },
   {
     id: "insta",
     href: "https://www.instagram.com/holdon_projekt/",
     label: "holdon_projekt",
-  icon: "/assets/instagram.webp",
+    icon: "/assets/instagram.webp",
   },
   {
     id: "facebook",
     href: "https://www.facebook.com/HoldOn-projekt-102266192323581",
     label: "HoldOn projekt",
-  icon: "/assets/facebook.webp",
+    icon: "/assets/facebook.webp",
   },
   {
     id: "linkedin",
     href: "https://www.linkedin.com/company/holdon-projekt/",
     label: "HoldOn projekt",
-  icon: "/assets/linkedin.webp",
+    icon: "/assets/linkedin.webp",
   },
 ] as const;
 
@@ -53,7 +53,7 @@ export function SiteFooter({
   currentYear,
 }: SiteFooterProps) {
   return (
-  <footer className="bg-white px-6 py-12 backdrop-blur">
+    <footer className="bg-white px-6 py-12 backdrop-blur">
       <div className="mx-auto flex w-[calc(100%-3rem)] max-w-8xl flex-col gap-10 lg:flex-row lg:items-end lg:justify-between">
         <div className="flex flex-col gap-8 md:w-2/3">
           <nav
@@ -94,14 +94,14 @@ export function SiteFooter({
               const isExternal = !link.href.startsWith("mailto");
               return (
                 <div key={link.id} className="flex items-center gap-2">
-                <Image
-                  src={link.icon}
-                  alt={`${link.label} icon`}
-                  width={24}
-                  height={24}
-                  loading="lazy"
-                  className="h-6 w-6"
-                />
+                  <Image
+                    src={link.icon}
+                    alt={`${link.label} icon`}
+                    width={24}
+                    height={24}
+                    loading="lazy"
+                    className="h-6 w-6"
+                  />
                   <a
                     href={link.href}
                     target={isExternal ? "_blank" : undefined}

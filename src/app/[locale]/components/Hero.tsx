@@ -11,10 +11,10 @@ export function Hero({ title, scrollTarget, scrollLabel }: HeroProps) {
   return (
     <section
       id="hero"
-      className="relative flex min-h-screen flex-col items-center justify-center overflow-hidden bg-[#e9e3bc] bg-[url('/assets/bg.webp')] bg-cover bg-top bg-no-repeat px-4 pt-32 md:flex-row md:items-stretch md:bg-contain md:bg-fixed md:bg-right-top md:px-20"
+      className="relative flex min-h-screen flex-col items-center justify-center overflow-hidden bg-[#e9e3bc] bg-[url('/assets/bg.webp')] bg-cover bg-top bg-no-repeat px-4 pt-32 md:flex-row md:items-stretch md:bg-contain md:bg-fixed md:bg-top-right md:px-20"
     >
       <div className="pointer-events-none absolute inset-0">
-        <div className="absolute -top-48 -left-[30vw] hidden w-[70vw] max-w-[900px] md:block">
+        <div className="absolute -top-48 -left-[30vw] hidden w-[70vw] max-w-225 md:block">
           <Image
             src="/assets/holdcikk-01.webp"
             alt="HoldOn logó"

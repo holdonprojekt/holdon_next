@@ -20,24 +20,24 @@ export function Section({ id, title, backgroundColor, children }: SectionProps) 
             <span className="font-light">{title}</span>
           </h2>
         </div>
-          <div className="flex w-full flex-col gap-10 text-lg leading-relaxed text-black md:flex-row md:items-center md:justify-between">
-            {Array.isArray(children) ? (
-              <>
-                <div className="flex w-full flex-col items-center md:w-[65%]">
-                  {children[0]}
-                </div>
-                {children.length > 1 ? (
-                  <div className="flex w-full flex-col items-center md:w-[35%]">
-                    {children.slice(1)}
-                  </div>
-                ) : null}
-              </>
-            ) : (
-              <div className="flex w-full flex-col items-center md:w-[100%]">
-                {children}
+        <div className="flex w-full flex-col gap-10 text-lg leading-relaxed text-black md:flex-row md:items-center md:justify-between">
+          {Array.isArray(children) ? (
+            <>
+              <div className="flex w-full flex-col items-center md:w-[65%]">
+                {children[0]}
               </div>
-            )}
-          </div>
+              {children.length > 1 ? (
+                <div className="flex w-full flex-col items-center md:w-[35%]">
+                  {children.slice(1)}
+                </div>
+              ) : null}
+            </>
+          ) : (
+            <div className="flex w-full flex-col items-center md:w-full">
+              {children}
+            </div>
+          )}
+        </div>
       </div>
     </section>
   );

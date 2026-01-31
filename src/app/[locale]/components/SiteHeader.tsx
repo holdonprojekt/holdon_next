@@ -71,9 +71,8 @@ export function SiteHeader({ menuItems, languageOptions, title }: SiteHeaderProp
         aria-label="Open navigation"
         onClick={() => setIsOpen(true)}
         data-umami-event="open-navigation-header-button"
-        className={`fixed right-4 top-6 z-40 flex items-center gap-3 rounded-full bg-white/90 px-5 py-3 backdrop-blur transition-all duration-200 hover:bg-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-shakespeare md:right-12 ${
-          isOpen ? "pointer-events-none -translate-y-2 opacity-0" : "pointer-events-auto"
-        }`}
+        className={`fixed right-4 top-6 z-40 flex items-center gap-3 rounded-full bg-white/90 px-5 py-3 backdrop-blur transition-all duration-200 hover:bg-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-shakespeare md:right-12 ${isOpen ? "pointer-events-none -translate-y-2 opacity-0" : "pointer-events-auto"
+          }`}
       >
         <Image
           src="/assets/telihold2-01.webp"
@@ -89,11 +88,10 @@ export function SiteHeader({ menuItems, languageOptions, title }: SiteHeaderProp
       </button>
       <div
         ref={panelRef}
-        className={`fixed left-1/2 top-4 z-40 w-[calc(100%-1.5rem)] max-w-8xl -translate-x-1/2 overflow-hidden rounded-4xl bg-white/95 backdrop-blur transition-all duration-300 md:top-6 md:w-[calc(100%-6rem)] ${
-          isOpen
+        className={`fixed left-1/2 top-4 z-40 w-[calc(100%-1.5rem)] max-w-8xl -translate-x-1/2 overflow-hidden rounded-4xl bg-white/95 backdrop-blur transition-all duration-300 md:top-6 md:w-[calc(100%-6rem)] ${isOpen
             ? "pointer-events-auto translate-y-0 opacity-100"
             : "pointer-events-none -translate-y-[130%] opacity-0"
-        }`}
+          }`}
       >
         <div className="grid gap-8 px-8 py-8 md:grid-cols-[auto_1fr_auto] md:items-center md:gap-12 md:px-16 md:py-12">
           <a

@@ -33,11 +33,11 @@ export const metadata: Metadata = {
     ],
   },
   twitter: {
-      card: "summary_large_image",
-      title: "HoldOn Projekt",
-      description: "HoldOn Projekt a menstruációs szegénységben élőkért.",
-      images: ["/assets/logo.webp"],
-    },
+    card: "summary_large_image",
+    title: "HoldOn Projekt",
+    description: "HoldOn Projekt a menstruációs szegénységben élőkért.",
+    images: ["/assets/logo.webp"],
+  },
   icons: {
     icon: "favicon.ico",
     shortcut: "/assets/logo.webp",
