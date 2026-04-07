@@ -4,7 +4,7 @@
 
 ## Overview
 
-Modern refactor of the HoldOn project website using the Next.js App Router and Tailwind CSS while keeping the original visual language. Content is served in Hungarian, English and Deutsch from JSON dictionaries and rendered on the server for fast loads.
+Modern refactor of the HoldOn project website using the Next.js App Router and Tailwind CSS while keeping the original visual language. Content is served in Hungarian, English, German and French from JSON dictionaries and rendered on the server for fast loads.
 
 ## Available Scripts
 
