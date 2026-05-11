@@ -64,6 +64,13 @@
       "press-title": "Press",
       "press-items": [
         {
+          "date": "25 September 2025",
+          "title": "New dispenser at Kompania Alter",
+          "href": "https://www.facebook.com/kompaniaalapitvany/posts/p%C3%A1r-h%C3%B3napja-megkeresett-minket-a-holdon-projekt-csapata-hogy-szeretn%C3%A9nek-n%C3%A1lunk-/1218871210283969/",
+          "excerpt": "A few months ago the HoldOn project team reached out to us to place a dispenser here as well, so support can reach young people too.",
+          "sourceLabel": "Kompánia Alapítvány - Facebook"
+        },
+        {
           "date": "22 May 2025",
           "title": "Join the fight against period poverty!",
           "href": "https://www.noklapja.hu/aktualis/2025/05/22/menstruacios-szegenyseg/",
@@ -115,7 +122,7 @@
       ]
     },
     "legal": {
-      "intro": "Official policies that govern the HoldOn project.",
+      "intro": "Legal documents",
       "terms-title": "Terms & Conditions",
       "privacy-title": "Privacy Policy"
     }

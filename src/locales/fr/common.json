@@ -18,7 +18,7 @@
     "footer-link-terms": "Conditions générales",
     "footer-link-privacy": "Politique de confidentialité",
     "footer-info": "HoldOn Egyesület, n° d'enregistrement : 01-02-0018388, NIF : 19401021-1-43, Adresse : 1113 Budapest, Villányi út 72. I/1.",
-  "credits": "Certaines icônes sont des œuvres librement utilisables de Freepik ou de Google.",
+    "credits": "Certaines icônes sont des œuvres librement utilisables de Freepik ou de Google.",
     "web-design": "<a href='https://tamascsertan.com'>Créé avec &#10084; par tamas.csertan</a>.",
     "legal": "HoldOn Egyesület. Tous droits réservés."
   },
@@ -63,6 +63,13 @@
     "press": {
       "press-title": "Presse",
       "press-items": [
+        {
+          "date": "25 septembre 2025",
+          "title": "Nouveau distributeur au Kompánia Alter",
+          "href": "https://www.facebook.com/kompaniaalapitvany/posts/p%C3%A1r-h%C3%B3napja-megkeresett-minket-a-holdon-projekt-csapata-hogy-szeretn%C3%A9nek-n%C3%A1lunk-/1218871210283969/",
+          "excerpt": "Il y a quelques mois, l'équipe du projet HoldOn nous a contactés afin d'installer un distributeur chez nous pour que l'aide atteigne aussi les jeunes.",
+          "sourceLabel": "Kompánia Alapítvány - Facebook"
+        },
         {
           "date": "22 mai 2025",
           "title": "Ensemble contre la précarité menstruelle",
@@ -115,7 +122,7 @@
       ]
     },
     "legal": {
-      "intro": "Les politiques officielles qui régissent le projet HoldOn.",
+      "intro": "Politiques officielles",
       "terms-title": "Conditions générales",
       "privacy-title": "Politique de confidentialité"
     }

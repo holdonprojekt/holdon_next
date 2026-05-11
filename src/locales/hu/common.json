@@ -16,7 +16,7 @@
     "footer-link-insta": "Edukáció",
     "footer-link-press": "Sajtó",
     "footer-link-terms": "Általános Szerződési Feltételek",
-    "footer-link-privacy": "Adatkezelési tájékoztató",
+    "footer-link-privacy": "Adatvédelmi Nyilatkozat",
     "footer-info": "Holdon Egyesület, Nytsz. : 01-02-0018388, Adószám : 19401021-1-43, Székhely : 1113 Budapest, Villányi út 72. I/1.",
     "credits": "Némely ikon a Freepik vagy a Google szabad felhasználású szellemi terméke.",
     "web-design": "<a href='https://tamascsertan.com'>Made with &#10084; by tamás.csertán</a>.",
@@ -63,6 +63,13 @@
     "press": {
       "press-title": "Sajtó",
       "press-items": [
+        {
+          "date": "2025. szeptember 25.",
+          "title": "Új automata a Kompánia Alterben",
+          "href": "https://www.facebook.com/kompaniaalapitvany/posts/p%C3%A1r-h%C3%B3napja-megkeresett-minket-a-holdon-projekt-csapata-hogy-szeretn%C3%A9nek-n%C3%A1lunk-/1218871210283969/",
+          "excerpt": "Pár hónapja megkeresett minket a HoldOn projekt csapata, hogy szeretnének nálunk is elhelyezni egy automatát annak érdekében, hogy fiatalokhoz is eljusson a segítség.",
+          "sourceLabel": "Kompánia Alapítvány - Facebook"
+        },
         {
           "date": "2025. május 22.",
           "title": "Küzdjünk együtt a menstruációs szegénység ellen!",
@@ -115,9 +122,9 @@
       ]
     },
     "legal": {
-      "intro": "A HoldOn projekt hivatalos irányelvei és szabályzatai.",
+      "intro": "Hivatalos dokumentumok",
       "terms-title": "Általános Szerződési Feltételek",
-      "privacy-title": "Adatkezelési tájékoztató"
+      "privacy-title": "Adatvédelmi Nyilatkozat"
     }
   },
   "notFound": {

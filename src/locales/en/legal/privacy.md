@@ -1,43 +1,42 @@
 # Privacy Policy
 
-_Last updated: 14 October 2025_
+_Last updated: 10 May 2026_
 
 ## 1. Controller
-HoldOn Egyesulet (registered in Hungary under number 01-02-0018388) is the data controller for the HoldOn project and this website.
+HoldOn Egyesulet (registered in Hungary under number 01-02-0018388, registered office: 1113 Budapest, Villanyi ut 72. I/1.) is the data controller for the HoldOn project and the holdonprojekt.hu website.
 
 ## 2. Personal Data We Collect
-We process only the personal data that is necessary to operate the project and maintain supporter relationships:
+We process only the personal data that is necessary to operate the project and keep in touch with supporters:
 
-- Contact information you provide when you write to us (name, email address, phone number).
-- Donation details necessary for accounting obligations.
-- Basic analytics data collected by our hosting provider (aggregated, non-identifiable metrics).
+- Contact details you provide when you reach out to us (name, email address, and possibly phone number).
+- Donation data required to meet accounting and tax obligations.
+- Aggregated, non-identifiable traffic statistics provided by our IT service provider.
 
 ## 3. Purpose and Legal Basis
-- Responding to inquiries and coordinating donations based on your consent.
-- Meeting accounting and tax obligations required under Hungarian law.
-- Protecting the legitimate interests of beneficiaries and volunteers, including fraud prevention and safeguarding.
+- Keeping in touch and coordinating donations based on your consent.
+- Meeting accounting and tax obligations as required by law.
 
 ## 4. Data Retention
-Personal data is stored only for as long as necessary to fulfill the purposes above. Accounting records are retained for the statutory period required by Hungarian regulations (currently 8 years).
+Personal data is stored only for as long as necessary to fulfill the purposes above. Accounting records are retained for the mandatory period required by law.
 
 ## 5. Data Sharing
-We do not sell personal data. Information may be shared with:
+We do not sell personal data. Information is shared only with:
 
-- Accounting and banking partners strictly for compliance purposes.
-- Service providers that host our digital infrastructure, bound by confidentiality agreements.
-- Authorities when required by law.
+- Accounting and banking partners strictly to meet legal obligations.
+- Digital infrastructure providers only with aggregated, non-identifiable data.
+- Authorities, when required by law or official proceedings.
 
 ## 6. Your Rights
-You have the right to request access, rectification, deletion, restriction, or portability of your personal data, and to object to processing where applicable. To exercise these rights, contact [holdon@holdonprojekt.hu](mailto:holdon@holdonprojekt.hu).
+You have the right of access, rectification, deletion, restriction, or portability of your personal data, and to object to processing. To exercise these rights, contact [holdon@holdonprojekt.hu](mailto:holdon@holdonprojekt.hu).
 
 ## 7. Security
-We implement technical and organisational safeguards to protect personal data against loss, misuse, or unauthorised access. Nevertheless, no method of transmission or storage is completely secure; residual risk remains.
+We apply technical and organisational measures to protect personal data against unauthorised access, accidental loss, or misuse. Nevertheless, no transmission or storage solution is entirely secure; a residual risk remains.
 
 ## 8. International Transfers
-We store data on servers located within the European Union. When service providers operate outside the EU, we rely on appropriate safeguards such as standard contractual clauses.
+We primarily store data within the European Union. When service providers operate outside the EU, we use appropriate safeguards such as standard contractual clauses.
 
 ## 9. Updates to This Policy
-We may revise this Privacy Policy to reflect legal or operational changes. Updated versions will be posted on this page with a new "Last updated" date.
+We update this Privacy Policy to reflect legal or operational changes. Updated versions will be posted on this page with the current date.
 
 ## 10. Contact
 For privacy requests or concerns, email us at [holdon@holdonprojekt.hu](mailto:holdon@holdonprojekt.hu).
